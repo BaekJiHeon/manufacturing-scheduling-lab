@@ -1,0 +1,13 @@
+[
+  {
+    "time": 16,
+    "type": "breakdown",
+    "machine": 4,
+    "repair_at": 28
+  },
+  {
+    "time": 28,
+    "type": "recovery",
+    "machine": 4
+  }
+]

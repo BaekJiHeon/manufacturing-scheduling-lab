@@ -1,0 +1,50 @@
+[
+  {
+    "name": "01_multi_rl_learning_raw",
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "size": [
+      4329,
+      3061
+    ],
+    "svg_pdf_vector": true
+  },
+  {
+    "name": "02_multi_rl_quality",
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "size": [
+      4329,
+      1869
+    ],
+    "svg_pdf_vector": true
+  },
+  {
+    "name": "03_multi_rl_quality_latency",
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "size": [
+      4350,
+      1861
+    ],
+    "svg_pdf_vector": true
+  },
+  {
+    "name": "04_multi_rl_external_transfer",
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "size": [
+      4329,
+      1869
+    ],
+    "svg_pdf_vector": true
+  }
+]

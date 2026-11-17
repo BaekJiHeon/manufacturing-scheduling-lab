@@ -1,0 +1,33 @@
+{
+  "script": "src/visualization/generate_figures.py",
+  "sources": [
+    "results/phase1_cpsat/20261117T053721Z-c77ef3ce/metrics.csv",
+    "results/phase1_cpsat/20261117T053721Z-c77ef3ce/schedules.csv"
+  ],
+  "files": [
+    "figures/publication/20261117T053721Z-c77ef3ce/makespan_benchmark.pdf",
+    "figures/publication/20261117T053721Z-c77ef3ce/makespan_benchmark.svg",
+    "figures/publication/20261117T053721Z-c77ef3ce/makespan_benchmark.png",
+    "figures/publication/20261117T053721Z-c77ef3ce/tardiness_benchmark.pdf",
+    "figures/publication/20261117T053721Z-c77ef3ce/tardiness_benchmark.svg",
+    "figures/publication/20261117T053721Z-c77ef3ce/tardiness_benchmark.png",
+    "figures/publication/20261117T053721Z-c77ef3ce/runtime_benchmark.pdf",
+    "figures/publication/20261117T053721Z-c77ef3ce/runtime_benchmark.svg",
+    "figures/publication/20261117T053721Z-c77ef3ce/runtime_benchmark.png",
+    "figures/publication/20261117T053721Z-c77ef3ce/objective_tradeoff.pdf",
+    "figures/publication/20261117T053721Z-c77ef3ce/objective_tradeoff.svg",
+    "figures/publication/20261117T053721Z-c77ef3ce/objective_tradeoff.png",
+    "figures/publication/20261117T053721Z-c77ef3ce/cpsat_static_gantt.pdf",
+    "figures/publication/20261117T053721Z-c77ef3ce/cpsat_static_gantt.svg",
+    "figures/publication/20261117T053721Z-c77ef3ce/cpsat_static_gantt.png"
+  ],
+  "width_mm": 178,
+  "dpi": 600,
+  "smoothing": "none",
+  "confidence_interval": "Summary CSV: Student t 95% CI over algorithm seeds on ONE fixed instance; deterministic repetitions do not measure generalization.",
+  "limitations": "No training/dynamic/generalization/ablation curves: those experiments have not run.",
+  "source_sha256": {
+    "results/phase1_cpsat/20261117T053721Z-c77ef3ce/metrics.csv": "637624fa28f75bfe1f371eb287494abe86b0c93f8bbbf1ed59e9b5859bc9eb36",
+    "results/phase1_cpsat/20261117T053721Z-c77ef3ce/schedules.csv": "9be8e3c0c92dd211641dfa2ea241248650879d25343431da92b88f16ee652dff"
+  }
+}

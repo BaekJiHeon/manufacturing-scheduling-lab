@@ -1,0 +1,662 @@
+{
+  "uid": "research-extended",
+  "title": "Manufacturing RL | Expanded Research and PPO",
+  "tags": [
+    "manufacturing",
+    "measured"
+  ],
+  "schemaVersion": 40,
+  "version": 1,
+  "refresh": "10s",
+  "time": {
+    "from": "2026-11-17T06:07:44.632231+00:00",
+    "to": "now"
+  },
+  "templating": {
+    "list": [
+      {
+        "name": "run_id",
+        "type": "query",
+        "datasource": {
+          "type": "grafana-postgresql-datasource",
+          "uid": "manufacturing_pg"
+        },
+        "query": "SELECT run_id AS __value,(metadata->>'name')||' | '||run_id AS __text FROM extended_runs ORDER BY metadata->>'created_at' DESC",
+        "refresh": 1,
+        "multi": false,
+        "includeAll": false
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 780,
+      "title": "Host CPU usage",
+      "description": "Host-wide resource use at the selected time range endpoint; not the training process alone. Refreshes live when the range ends at now. Utilization does not measure schedule quality.",
+      "type": "gauge",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "manufacturing_prom"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "manufacturing_prom"
+          },
+          "expr": "manufacturing_cpu_percent",
+          "instant": true,
+          "range": false
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "decimals": 1,
+          "color": {
+            "mode": "thresholds"
+          },
+          "noValue": "N/A",
+          "min": 0,
+          "max": 100,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      }
+    },
+    {
+      "id": 781,
+      "title": "Host memory usage",
+      "description": "Host-wide resource use at the selected time range endpoint; not the training process alone. Refreshes live when the range ends at now. Utilization does not measure schedule quality. psutil percentage = (total - available) / total.",
+      "type": "gauge",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "manufacturing_prom"
+      },
+      "gridPos": {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "manufacturing_prom"
+          },
+          "expr": "manufacturing_ram_percent",
+          "instant": true,
+          "range": false
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "decimals": 1,
+          "color": {
+            "mode": "thresholds"
+          },
+          "noValue": "N/A",
+          "min": 0,
+          "max": 100,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      }
+    },
+    {
+      "id": 782,
+      "title": "CP-SAT budget used \u00b7 P95",
+      "description": "P95 across individual CP-SAT planning calls in the selected run, including the initial plan. Dynamic episode totals are excluded. Expanded-static uses solver runtime / solver limit; other campaigns include preparation and validation in the planning budget. The full selected run is used regardless of the time range. 100% is the allocated budget; orange indicates reaching/exceeding it. Display scale is 0\u2013120%; the numeric value is not capped.",
+      "type": "gauge",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "WITH calls AS (\n SELECT CASE WHEN payload ? 'budget_s' THEN (payload->>'runtime_ms')::float\n             ELSE (payload->>'solver_runtime_ms')::float END AS latency_ms,\n        COALESCE(payload->>'budget_s',payload->>'time_limit_s')::float AS budget_s\n FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload->>'method'='CP-SAT' AND NOT (payload ? 'decisions')\n UNION ALL\n SELECT (d->>'runtime_ms')::float,(d->>'budget_s')::float\n FROM extended_records CROSS JOIN LATERAL jsonb_array_elements(payload->'decisions') d\n WHERE run_id=${run_id:sqlstring} AND payload->>'method'='CP-SAT'\n) SELECT percentile_cont(0.95) WITHIN GROUP (ORDER BY 100*latency_ms/(1000*budget_s)) AS budget_used_percent FROM calls WHERE budget_s>0"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "decimals": 1,
+          "color": {
+            "mode": "thresholds"
+          },
+          "noValue": "N/A",
+          "min": 0,
+          "max": 120,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              },
+              {
+                "color": "orange",
+                "value": 100
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      }
+    },
+    {
+      "id": 783,
+      "title": "CP-SAT planning time \u00b7 P95",
+      "description": "P95 across individual CP-SAT planning calls in the selected run, including the initial plan. Dynamic episode totals are excluded. Expanded-static uses solver runtime / solver limit; other campaigns include preparation and validation in the planning budget. The full selected run is used regardless of the time range. Includes different configured budgets; see detailed rows for each budget.",
+      "type": "stat",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 18,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "WITH calls AS (\n SELECT CASE WHEN payload ? 'budget_s' THEN (payload->>'runtime_ms')::float\n             ELSE (payload->>'solver_runtime_ms')::float END AS latency_ms,\n        COALESCE(payload->>'budget_s',payload->>'time_limit_s')::float AS budget_s\n FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload->>'method'='CP-SAT' AND NOT (payload ? 'decisions')\n UNION ALL\n SELECT (d->>'runtime_ms')::float,(d->>'budget_s')::float\n FROM extended_records CROSS JOIN LATERAL jsonb_array_elements(payload->'decisions') d\n WHERE run_id=${run_id:sqlstring} AND payload->>'method'='CP-SAT'\n) SELECT percentile_cont(0.95) WITHIN GROUP (ORDER BY latency_ms) AS planning_ms FROM calls WHERE budget_s>0"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ms",
+          "decimals": 1,
+          "color": {
+            "mode": "fixed",
+            "fixedColor": "blue"
+          },
+          "noValue": "N/A"
+        },
+        "overrides": []
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "colorMode": "value",
+        "graphMode": "none",
+        "textMode": "auto"
+      }
+    },
+    {
+      "id": 800,
+      "title": "Experiment status",
+      "type": "table",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 6,
+        "w": 24,
+        "h": 4
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT metadata->>'name' AS campaign,metadata->>'status' AS status,(SELECT count(*) FROM extended_records r WHERE r.run_id=extended_runs.run_id) AS records FROM extended_runs WHERE run_id=${run_id:sqlstring}"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 801,
+      "title": "Mean scheduling KPIs \u00b7 group details in row label",
+      "type": "table",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 10,
+        "w": 24,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'instance')||' | '||(payload->>'method')||COALESCE(' '||(payload->>'budget_s')||'s',' '||(payload->>'time_limit_s')||'s','')||COALESCE(' | '||(payload->>'objective'),'')||' | '||(payload->>'scenario') AS case,round(avg((payload->>'makespan')::numeric),2) AS makespan,round(avg((payload->>'total_tardiness')::numeric),2) AS tardiness,round(avg((payload->>'runtime_ms')::numeric),2) AS runtime_ms FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload ? 'makespan' AND COALESCE(payload->>'record_type','test')='test' GROUP BY 1 ORDER BY 1"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 802,
+      "title": "Scheduling KPIs \u00b7 one row per evaluation",
+      "type": "table",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 18,
+        "w": 24,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT step,payload->>'instance' AS instance,payload->>'scenario' AS scenario,payload->>'method' AS method,payload->>'objective' AS objective,(payload->>'seed')::int AS seed,payload->>'status' AS status,COALESCE(payload->>'budget_s',payload->>'time_limit_s') AS budget_s,(payload->>'makespan')::float AS makespan,(payload->>'total_tardiness')::float AS tardiness,(payload->>'runtime_ms')::float AS runtime_ms,(payload->>'best_bound')::float AS bound,payload->>'solution_source' AS solution_source FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload ? 'makespan' AND COALESCE(payload->>'record_type','test')='test' ORDER BY step"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 803,
+      "title": "PPO validation objective \u00b7 lower is better",
+      "type": "timeseries",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 26,
+        "w": 24,
+        "h": 6
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'recorded_at')::timestamptz AS time,'seed '||(payload->>'seed') AS metric,(payload->>'objective_score')::float AS value FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload->>'record_type'='validation' ORDER BY time"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 804,
+      "title": "PPO episode reward \u00b7 gamma=1 objective identity",
+      "type": "timeseries",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 32,
+        "w": 24,
+        "h": 6
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'recorded_at')::timestamptz AS time,'seed '||(payload->>'seed') AS metric,(payload->>'train_episode_return')::float AS value FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload ? 'train_episode_return' ORDER BY time"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 805,
+      "title": "PPO training losses \u00b7 recorded optimizer updates",
+      "type": "timeseries",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 38,
+        "w": 24,
+        "h": 6
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'recorded_at')::timestamptz AS time,'seed '||(payload->>'seed')||' '||v.key AS metric,(v.value)::float AS value FROM extended_records CROSS JOIN LATERAL jsonb_each_text(payload) v WHERE run_id=${run_id:sqlstring} AND v.key IN ('train_policy_gradient_loss','train_value_loss','train_approx_kl') ORDER BY time"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 806,
+      "title": "PPO entropy and gradient norm",
+      "type": "timeseries",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 44,
+        "w": 24,
+        "h": 6
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'recorded_at')::timestamptz AS time,'seed '||(payload->>'seed')||' '||v.key AS metric,(v.value)::float AS value FROM extended_records CROSS JOIN LATERAL jsonb_each_text(payload) v WHERE run_id=${run_id:sqlstring} AND v.key IN ('train_entropy_loss','gradient_norm_before_clip') ORDER BY time"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 807,
+      "title": "Training throughput and checkpoint audit",
+      "type": "table",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 50,
+        "w": 24,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT step,payload->>'seed' AS seed,payload->>'env_steps' AS env_steps,payload->>'training_steps_per_second' AS steps_per_second,payload->>'ram_mb' AS ram_mb,payload->>'training_time_s' AS training_time_s,payload->>'checkpoint_bytes' AS checkpoint_bytes FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload->>'record_type' IN ('training','training_summary') ORDER BY step DESC LIMIT 50"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 808,
+      "title": "Dynamic outcomes and schedule stability",
+      "type": "table",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 58,
+        "w": 24,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT step,payload->>'instance' AS instance,payload->>'scenario' AS scenario,payload->>'method' AS method,payload->>'objective' AS objective,payload->>'seed' AS seed,payload->>'budget_s' AS budget_s,payload->>'rescheduling_decisions' AS replans,payload->>'cumulative_start_shift' AS start_shift,payload->>'cumulative_machine_changes' AS machine_changes,payload->>'mean_replanning_ms' AS mean_replanning_ms,payload->>'fallback_count' AS fallback_count,payload->>'constraint_violation_count' AS violations FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload ? 'decisions' ORDER BY step"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 809,
+      "title": "Each observed event and solver certificate",
+      "type": "table",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 66,
+        "w": 24,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT step,payload->>'instance' AS instance,payload->>'method' AS method,d->'event'->>'type' AS event,d->'event'->>'time' AS simulation_time,d->>'observed_job_count' AS known_jobs,d->>'status' AS solver_status,d->>'solution_source' AS solution_source,d->>'runtime_ms' AS latency_ms,d->>'makespan' AS planned_makespan,d->>'total_tardiness' AS planned_tardiness FROM extended_records CROSS JOIN LATERAL jsonb_array_elements(payload->'decisions') d WHERE run_id=${run_id:sqlstring} ORDER BY step,(d->'event'->>'time')::int"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 810,
+      "title": "Feasibility and solver-response audit",
+      "type": "table",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 74,
+        "w": 24,
+        "h": 8
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT step,payload->>'instance' AS instance,payload->>'method' AS method,payload->>'constraint_violation_count' AS violations,payload->>'solver_response_objective_mismatch' AS response_mismatch,payload->>'invalid_bound_discarded' AS invalid_bound_discarded,payload->>'budget_overrun_ms' AS budget_overrun_ms FROM extended_records WHERE run_id=${run_id:sqlstring} AND (payload->>'constraint_violation_count' IS NOT NULL) ORDER BY step"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    }
+  ]
+}

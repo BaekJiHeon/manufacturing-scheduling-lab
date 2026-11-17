@@ -1,0 +1,63 @@
+{
+  "repository": "https://github.com/ScheduleOpt/benchmarks",
+  "commit": "8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+  "source_path": "flexible-jobshop/instances/fjsp/Brandimarte1993/mk01.txt",
+  "git_blob_sha1": "365d04a98ca8cd11a69a4e50ad9cfcf0fbacd5e0",
+  "source_url": "https://raw.githubusercontent.com/ScheduleOpt/benchmarks/8a6e36ef31263d36975e56fb481e0ba04e188d6f/flexible-jobshop/instances/fjsp/Brandimarte1993/mk01.txt",
+  "bks_source_url": "https://github.com/ScheduleOpt/benchmarks/blob/8a6e36ef31263d36975e56fb481e0ba04e188d6f/flexible-jobshop/solutions/bks.json",
+  "bks": {
+    "instance": "mk01",
+    "size": "10 x 6",
+    "family": "mk",
+    "family_long": "Brandimarte 1993",
+    "type": "flexible jobshop",
+    "status": "closed",
+    "lower_bound": 40,
+    "upper_bound": 40,
+    "history": {
+      "lb": [
+        {
+          "value": 40,
+          "date": "2025-08-29",
+          "solver": "OptalCP",
+          "hardware": "Intel 11th Gen Core i7-1185G7",
+          "time": 1,
+          "certificate": "no"
+        },
+        {
+          "value": 40,
+          "date": "2013-01-01",
+          "solver": "Schutt2013",
+          "hardware": null,
+          "time": null,
+          "certificate": "no"
+        }
+      ],
+      "ub": [
+        {
+          "value": 40,
+          "date": "2025-08-29",
+          "solver": "OptalCP",
+          "hardware": "Intel 11th Gen Core i7-1185G7",
+          "time": 1,
+          "certificate": "no"
+        },
+        {
+          "value": 40,
+          "date": "2000-01-01",
+          "solver": "MG2000",
+          "hardware": null,
+          "time": null,
+          "certificate": "no"
+        }
+      ]
+    }
+  },
+  "transformation": "Legacy file whitespace normalized; raw text unchanged. Machine indices converted 1-based to 0-based in memory.",
+  "retrieved_date": "2026-11-17",
+  "raw_sha256": "d41e39a41d218ec19f5e9fb83a5a0bdc76dcfb93fa38a0d565318b3795c7d9fa",
+  "legacy_sha256": "a500841f969eed4e730688c71dd41aeff80b49b3d0e2ec4c408a91904225556b",
+  "byte_identical": false,
+  "integer_tokens_identical": true,
+  "git_blob_verified": true
+}

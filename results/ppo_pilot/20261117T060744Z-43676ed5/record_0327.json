@@ -1,0 +1,237 @@
+{
+  "run_id": "20261117T060744Z-43676ed5",
+  "step": 327,
+  "recorded_at": "2026-11-17T06:12:25.056991+00:00",
+  "record_type": "test",
+  "instance": "GEN9100007",
+  "scenario": "generated_test",
+  "method": "MaskablePPO",
+  "seed": 0,
+  "env_steps": 32768,
+  "makespan": 40,
+  "total_tardiness": 14,
+  "mean_tardiness": 2.8,
+  "on_time_delivery_rate": 0.6,
+  "machine_utilization": 0.5316455696202531,
+  "machine_idle_time": 111,
+  "constraint_violation_count": 0,
+  "start_shift": null,
+  "machine_changes": null,
+  "reference_operations": null,
+  "stability_cost": null,
+  "normalized_objective": 0.2779220779220779,
+  "normalization_scale": 154,
+  "schedule": [
+    {
+      "job": 1,
+      "operation": 0,
+      "machine": 3,
+      "start": 0,
+      "end": 7,
+      "duration": 7
+    },
+    {
+      "job": 3,
+      "operation": 0,
+      "machine": 1,
+      "start": 0,
+      "end": 10,
+      "duration": 10
+    },
+    {
+      "job": 2,
+      "operation": 0,
+      "machine": 0,
+      "start": 0,
+      "end": 4,
+      "duration": 4
+    },
+    {
+      "job": 0,
+      "operation": 0,
+      "machine": 4,
+      "start": 0,
+      "end": 10,
+      "duration": 10
+    },
+    {
+      "job": 2,
+      "operation": 1,
+      "machine": 2,
+      "start": 4,
+      "end": 17,
+      "duration": 10
+    },
+    {
+      "job": 1,
+      "operation": 1,
+      "machine": 0,
+      "start": 7,
+      "end": 17,
+      "duration": 10
+    },
+    {
+      "job": 4,
+      "operation": 0,
+      "machine": 4,
+      "start": 10,
+      "end": 20,
+      "duration": 10
+    },
+    {
+      "job": 0,
+      "operation": 1,
+      "machine": 1,
+      "start": 10,
+      "end": 16,
+      "duration": 6
+    },
+    {
+      "job": 0,
+      "operation": 2,
+      "machine": 3,
+      "start": 16,
+      "end": 23,
+      "duration": 7
+    },
+    {
+      "job": 3,
+      "operation": 1,
+      "machine": 1,
+      "start": 16,
+      "end": 18,
+      "duration": 2
+    },
+    {
+      "job": 2,
+      "operation": 2,
+      "machine": 2,
+      "start": 17,
+      "end": 22,
+      "duration": 5
+    },
+    {
+      "job": 3,
+      "operation": 2,
+      "machine": 0,
+      "start": 18,
+      "end": 25,
+      "duration": 7
+    },
+    {
+      "job": 1,
+      "operation": 2,
+      "machine": 1,
+      "start": 18,
+      "end": 22,
+      "duration": 4
+    },
+    {
+      "job": 2,
+      "operation": 3,
+      "machine": 2,
+      "start": 22,
+      "end": 28,
+      "duration": 6
+    },
+    {
+      "job": 4,
+      "operation": 1,
+      "machine": 1,
+      "start": 22,
+      "end": 28,
+      "duration": 6
+    },
+    {
+      "job": 3,
+      "operation": 3,
+      "machine": 5,
+      "start": 25,
+      "end": 34,
+      "duration": 9
+    },
+    {
+      "job": 4,
+      "operation": 2,
+      "machine": 2,
+      "start": 28,
+      "end": 30,
+      "duration": 2
+    },
+    {
+      "job": 2,
+      "operation": 4,
+      "machine": 4,
+      "start": 28,
+      "end": 33,
+      "duration": 5
+    },
+    {
+      "job": 3,
+      "operation": 4,
+      "machine": 5,
+      "start": 34,
+      "end": 39,
+      "duration": 5
+    },
+    {
+      "job": 3,
+      "operation": 5,
+      "machine": 5,
+      "start": 39,
+      "end": 40,
+      "duration": 1
+    }
+  ],
+  "outages": [
+    {
+      "machine": 2,
+      "start": 5,
+      "end": 8
+    }
+  ],
+  "observed_events": [
+    {
+      "time": 5,
+      "type": "breakdown",
+      "machine": 2,
+      "repair_at": 8
+    },
+    {
+      "time": 7,
+      "type": "arrival",
+      "job": [
+        {
+          "4": 10,
+          "1": 6
+        },
+        {
+          "0": 7,
+          "1": 6,
+          "2": 8
+        },
+        {
+          "1": 7,
+          "3": 7,
+          "2": 2
+        }
+      ],
+      "due": 31
+    },
+    {
+      "time": 8,
+      "type": "recovery",
+      "machine": 2
+    }
+  ],
+  "runtime_ms": 4.0941250044852495,
+  "decision_count": 20,
+  "wait_count": 0,
+  "mean_inference_ms": 0.16273753135465086,
+  "p95_inference_ms": 0.21079789730720233,
+  "total_inference_ms": 3.254750627093017,
+  "objective_score": 0.428,
+  "status": "FEASIBLE",
+  "episode_return": -0.428,
+  "stability_applicable": false
+}

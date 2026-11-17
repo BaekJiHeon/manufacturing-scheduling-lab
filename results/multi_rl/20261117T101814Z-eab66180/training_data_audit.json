@@ -1,0 +1,145 @@
+{
+  "disjoint_from_validation_and_test": true,
+  "coverage": [
+    {
+      "method": "MaskablePPO",
+      "seed": 0,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1820,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskablePPO",
+      "seed": 1,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1843,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskablePPO",
+      "seed": 2,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1805,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskablePPO",
+      "seed": 3,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1898,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskablePPO",
+      "seed": 4,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1817,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskedPQN",
+      "seed": 0,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1393,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskedPQN",
+      "seed": 1,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1425,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskedPQN",
+      "seed": 2,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1383,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskedPQN",
+      "seed": 3,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1454,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "MaskedPQN",
+      "seed": 4,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 1410,
+      "selection_unit": "environment reset"
+    },
+    {
+      "method": "GRPO-Sched",
+      "seed": 0,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 236,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GRPO-Sched",
+      "seed": 1,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 232,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GRPO-Sched",
+      "seed": 2,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 228,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GRPO-Sched",
+      "seed": 3,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 240,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GRPO-Sched",
+      "seed": 4,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 228,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GSPO-Sched",
+      "seed": 0,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 216,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GSPO-Sched",
+      "seed": 1,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 204,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GSPO-Sched",
+      "seed": 2,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 208,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GSPO-Sched",
+      "seed": 3,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 220,
+      "selection_unit": "same-instance group prompt"
+    },
+    {
+      "method": "GSPO-Sched",
+      "seed": 4,
+      "unique_training_instances": 128,
+      "logged_instance_selections": 208,
+      "selection_unit": "same-instance group prompt"
+    }
+  ]
+}

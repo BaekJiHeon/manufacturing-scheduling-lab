@@ -1,0 +1,16 @@
+{
+  "methods": ["MaskablePPO", "MaskedPQN", "GRPO-Sched", "GSPO-Sched"],
+  "seeds": [0,1,2,3,4], "total_steps_per_seed": 65536,
+  "n_envs": 4, "n_steps": 256, "batch_size": 128, "n_epochs": 4,
+  "learning_rate": 0.0003, "gamma": 1.0, "gae_lambda": 0.95,
+  "ent_coef": 0.01, "max_grad_norm": 0.5, "net_arch": [128,128],
+  "training_bank_size": 128, "training_seed_base": 2000000,
+  "validation_seeds": [9000000,9000001,9000002,9000003],
+  "test_seeds": [9200000,9200001,9200002,9200003,9200004,9200005,9200006,9200007,9200008,9200009,9200010,9200011,9200012,9200013,9200014,9200015,9200016,9200017,9200018,9200019],
+  "evaluation_interval": 16384, "log_interval": 4096,
+  "pqn_lr": 0.00025, "pqn_rollout_steps": 128, "q_lambda": 0.65,
+  "group_size": 8, "prompt_batch": 4, "trajectory_minibatch": 8,
+  "grpo_clip": 0.2, "gspo_clip": 0.0003,
+  "device": "cpu", "torch_threads": 1,
+  "scope": "fixed-budget exploratory comparison; no test-driven tuning; last checkpoint primary; GRPO/GSPO are scheduling adaptations with beta=0 and entropy=0.01; PQN uses LayerNorm/ReLU while policy methods use Tanh; same observation/action/reward and finite training bank, algorithm-specific visitation and update counts"
+}

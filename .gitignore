@@ -1,0 +1,20 @@
+._*
+.DS_Store
+.venv/
+__pycache__/
+.pytest_cache/
+runtime/
+.cache/
+*.pyc
+
+.python-runtime/
+
+# Large, reproducibly generated local model artifacts; hashes are tracked in results.
+checkpoints/
+
+# Local-only sessions, dumps and execution logs.
+logs/
+postgres/grafana_*.sql
+postgres/recovery_*.sql
+.env
+.env.*

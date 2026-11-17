@@ -1,0 +1,257 @@
+{
+  "uid": "research-training",
+  "title": "Manufacturing RL | Training and Host Resources",
+  "tags": [
+    "manufacturing",
+    "verified"
+  ],
+  "schemaVersion": 40,
+  "version": 4,
+  "refresh": "10s",
+  "time": {
+    "from": "2026-11-17T06:07:44.632231+00:00",
+    "to": "now"
+  },
+  "templating": {
+    "list": [
+      {
+        "name": "run_id",
+        "type": "query",
+        "datasource": {
+          "type": "grafana-postgresql-datasource",
+          "uid": "manufacturing_pg"
+        },
+        "query": "SELECT run_id AS __value,(metadata->>'name')||' | '||run_id AS __text FROM extended_runs ORDER BY metadata->>'created_at' DESC",
+        "refresh": 1,
+        "multi": false,
+        "includeAll": false
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 900,
+      "title": "PPO validation objective \u00b7 lower is better",
+      "type": "timeseries",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 7
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'recorded_at')::timestamptz AS time,'seed '||(payload->>'seed') AS metric,(payload->>'objective_score')::float AS value FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload->>'record_type'='validation' ORDER BY time"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 901,
+      "title": "PPO episode reward \u00b7 gamma=1 objective identity",
+      "type": "timeseries",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 7,
+        "w": 24,
+        "h": 7
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'recorded_at')::timestamptz AS time,'seed '||(payload->>'seed') AS metric,(payload->>'train_episode_return')::float AS value FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload ? 'train_episode_return' ORDER BY time"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 902,
+      "title": "PPO training losses \u00b7 recorded optimizer updates",
+      "type": "timeseries",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 14,
+        "w": 24,
+        "h": 7
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'recorded_at')::timestamptz AS time,'seed '||(payload->>'seed')||' '||v.key AS metric,(v.value)::float AS value FROM extended_records CROSS JOIN LATERAL jsonb_each_text(payload) v WHERE run_id=${run_id:sqlstring} AND v.key IN ('train_policy_gradient_loss','train_value_loss','train_approx_kl') ORDER BY time"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 903,
+      "title": "PPO entropy and gradient norm",
+      "type": "timeseries",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 21,
+        "w": 24,
+        "h": 7
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "time_series",
+          "rawQuery": true,
+          "rawSql": "SELECT (payload->>'recorded_at')::timestamptz AS time,'seed '||(payload->>'seed')||' '||v.key AS metric,(v.value)::float AS value FROM extended_records CROSS JOIN LATERAL jsonb_each_text(payload) v WHERE run_id=${run_id:sqlstring} AND v.key IN ('train_entropy_loss','gradient_norm_before_clip') ORDER BY time"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 904,
+      "title": "Training throughput and checkpoint audit",
+      "type": "table",
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "manufacturing_pg"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 28,
+        "w": 24,
+        "h": 7
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "manufacturing_pg"
+          },
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT step,payload->>'seed' AS seed,payload->>'env_steps' AS env_steps,payload->>'training_steps_per_second' AS steps_per_second,payload->>'ram_mb' AS ram_mb,payload->>'training_time_s' AS training_time_s,payload->>'checkpoint_bytes' AS checkpoint_bytes FROM extended_records WHERE run_id=${run_id:sqlstring} AND payload->>'record_type' IN ('training','training_summary') ORDER BY step DESC LIMIT 50"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 905,
+      "title": "Host CPU usage (%)",
+      "type": "timeseries",
+      "gridPos": {
+        "x": 0,
+        "y": 35,
+        "w": 24,
+        "h": 7
+      },
+      "datasource": {
+        "uid": "manufacturing_prom",
+        "type": "prometheus"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "manufacturing_cpu_percent"
+        }
+      ]
+    },
+    {
+      "id": 906,
+      "title": "Host RAM used (bytes)",
+      "type": "timeseries",
+      "gridPos": {
+        "x": 0,
+        "y": 42,
+        "w": 24,
+        "h": 7
+      },
+      "datasource": {
+        "uid": "manufacturing_prom",
+        "type": "prometheus"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "manufacturing_ram_used_bytes"
+        }
+      ]
+    }
+  ]
+}

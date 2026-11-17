@@ -1,0 +1,117 @@
+{
+  "run_id": "20261117T055516Z-ffeba27d",
+  "name": "objectives_dynamic",
+  "status": "failed",
+  "created_at": "2026-11-17T05:55:16.448570+00:00",
+  "config": {
+    "objective_instances": [
+      "MK01",
+      "MK06",
+      "MK10"
+    ],
+    "dynamic_instances": [
+      "MK01",
+      "MK06"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "objective_limits_s": [
+      1,
+      5
+    ],
+    "dynamic_limits_s": [
+      1,
+      5
+    ],
+    "weights": {
+      "makespan": [
+        1,
+        0,
+        0
+      ],
+      "tardiness": [
+        0,
+        1,
+        0
+      ],
+      "balanced": [
+        1,
+        1,
+        0
+      ],
+      "stable": [
+        1,
+        1,
+        1
+      ]
+    },
+    "scenarios": [
+      "breakdown",
+      "arrival",
+      "combined"
+    ],
+    "due_seed": 42,
+    "planning_time": "simulation frozen; wall-clock latency reported separately",
+    "repair_information": "repair time revealed at breakdown onset; perfect estimate; future events hidden",
+    "scope": "exploratory; no operational cost or processing-time uncertainty yet"
+  },
+  "python": "3.11.15",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "git_commit": "86989f5a82be2647a3113bf53a5d322b821f6ac7",
+  "packages": {
+    "cloudpickle": "3.1.2",
+    "kiwisolver": "1.5.1",
+    "pandas": "3.1.1",
+    "packaging": "26.3",
+    "Pygments": "2.21.0",
+    "contourpy": "1.3.3",
+    "numpy": "2.4.6",
+    "iniconfig": "2.3.1",
+    "gymnasium": "1.4.0",
+    "pillow": "13.0.0",
+    "pluggy": "1.7.0",
+    "immutabledict": "4.3.1",
+    "protobuf": "6.33.6",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.11.2",
+    "psycopg-binary": "3.3.9",
+    "scipy": "1.17.1",
+    "pytest": "9.2.0",
+    "cycler": "0.12.1",
+    "fonttools": "4.68.0",
+    "tzdata": "2026.6",
+    "Farama-Notifications": "0.0.6",
+    "absl-py": "2.5.1",
+    "typing_extensions": "4.16.0",
+    "python-dateutil": "4.0.0",
+    "psutil": "7.2.2",
+    "ortools": "9.15.6755",
+    "psycopg": "3.3.9",
+    "pyparsing": "3.3.3"
+  },
+  "source_sha256": {
+    "src/run_baselines.py": "4e24f4cabf8e18874b0ea80475126051c8009e91e54daad5ffb530f2081b8ff5",
+    "src/run_phase1_repeated.py": "fc2dc8037977750ea3df6a8c2a615565350348e3b1d0cf3456bdebaa9bad4778",
+    "src/run_cpsat.py": "6acd4625a8efec7a22d4ef8957c83a1cd1add63d82b6f4c50c165a987cbae4e2",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/simulator/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/simulator/problem.py": "4740d98abf730c6c3ea0e9481e4a13ec3eadc36f360bf4a3135da5ad9910114c",
+    "src/simulator/rolling.py": "5e779d313e36f34a2c29306e548fb2d475752513562182cd70577f8e4000e7ac",
+    "src/environments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/environments/static_fjsp.py": "3119089e610bc3417b4fb090331b8829795ad52907ecc74c7fdd07ca84cd0604",
+    "src/evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/evaluation/run_phase01.py": "8b211ec5451b9711336a8a2a0e31dfbea2816d36ea43b6c2d2249552485917e9",
+    "src/evaluation/campaign.py": "8c4e5d49f85fa1856850487020cb437902b06c10a5b126c008a577d744356c56",
+    "src/evaluation/run_expanded_static.py": "9bc43688d38b23bbdaa5e19cea01550b3c3424743530f9b4ec46230864f62199",
+    "src/evaluation/run_objectives_dynamic.py": "a932f6ce4eeee02658f15b5e8fb5d84a5a8b985dc89b7a4ea9bf6d7496ea1a19",
+    "src/visualization/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/visualization/generate_figures.py": "d78fc872d78c6539e78f92950a2513e7b98bc28e33d8f6eee0e564d00cf2bc3e",
+    "src/algorithms/rolling_cpsat.py": "595e9492a32bf0243275df1a38c8b7b6aad5d90b9c9faaae958de52c51274e52"
+  },
+  "finished_at": "2026-11-17T05:56:14.034217+00:00",
+  "records": 34,
+  "error": "Objective formula mismatch"
+}

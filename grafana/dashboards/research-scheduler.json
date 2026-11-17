@@ -1,0 +1,120 @@
+{
+  "uid": "research-scheduler",
+  "title": "Manufacturing RL | Static Scheduler",
+  "tags": [
+    "manufacturing",
+    "verified"
+  ],
+  "schemaVersion": 40,
+  "version": 1,
+  "refresh": "10s",
+  "time": {
+    "from": "1970-01-01T00:00:00.000Z",
+    "to": "1970-01-01T00:02:00.000Z"
+  },
+  "templating": {
+    "list": [
+      {
+        "name": "run_id",
+        "type": "query",
+        "datasource": {
+          "uid": "manufacturing_pg",
+          "type": "grafana-postgresql-datasource"
+        },
+        "query": "SELECT run_id FROM research_runs ORDER BY created_at DESC",
+        "definition": "SELECT run_id FROM research_runs ORDER BY created_at DESC",
+        "refresh": 1,
+        "multi": false,
+        "includeAll": false,
+        "sort": 0
+      },
+      {
+        "name": "step",
+        "type": "query",
+        "datasource": {
+          "uid": "manufacturing_pg",
+          "type": "grafana-postgresql-datasource"
+        },
+        "query": "SELECT step FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} ORDER BY step",
+        "definition": "SELECT step FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} ORDER BY step",
+        "refresh": 1,
+        "multi": false,
+        "includeAll": false,
+        "sort": 0
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 301,
+      "title": "Static Gantt \u00b7 1 display second = 1 abstract benchmark unit",
+      "type": "state-timeline",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 11
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "grafana-postgresql-datasource"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "WITH chosen AS (SELECT * FROM operation_schedules WHERE run_id=${run_id:sqlstring} AND step=${step:raw}), times AS (SELECT start AS t FROM chosen UNION SELECT \"end\" AS t FROM chosen) SELECT TIMESTAMPTZ '1970-01-01 00:00:00+00' + t * INTERVAL '1 second' AS time,(SELECT 'J'||(job+1)||'/O'||(operation+1) FROM chosen s WHERE machine=0 AND s.start<=t AND s.\"end\">t LIMIT 1) AS \"Machine 1\",(SELECT 'J'||(job+1)||'/O'||(operation+1) FROM chosen s WHERE machine=1 AND s.start<=t AND s.\"end\">t LIMIT 1) AS \"Machine 2\",(SELECT 'J'||(job+1)||'/O'||(operation+1) FROM chosen s WHERE machine=2 AND s.start<=t AND s.\"end\">t LIMIT 1) AS \"Machine 3\",(SELECT 'J'||(job+1)||'/O'||(operation+1) FROM chosen s WHERE machine=3 AND s.start<=t AND s.\"end\">t LIMIT 1) AS \"Machine 4\",(SELECT 'J'||(job+1)||'/O'||(operation+1) FROM chosen s WHERE machine=4 AND s.start<=t AND s.\"end\">t LIMIT 1) AS \"Machine 5\",(SELECT 'J'||(job+1)||'/O'||(operation+1) FROM chosen s WHERE machine=5 AND s.start<=t AND s.\"end\">t LIMIT 1) AS \"Machine 6\" FROM times ORDER BY t",
+          "editorMode": "code",
+          "rawQuery": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "fillOpacity": 75,
+            "lineWidth": 1,
+            "spanNulls": false
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "mergeValues": true,
+        "showValue": "auto",
+        "rowHeight": 0.8
+      }
+    },
+    {
+      "id": 302,
+      "title": "Exact operation assignments",
+      "type": "table",
+      "gridPos": {
+        "x": 0,
+        "y": 11,
+        "w": 24,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "grafana-postgresql-datasource"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT * FROM operation_schedules WHERE run_id=${run_id:sqlstring} AND step=${step:raw} ORDER BY machine,start",
+          "editorMode": "code",
+          "rawQuery": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {}
+    }
+  ]
+}

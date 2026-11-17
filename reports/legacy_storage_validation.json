@@ -1,0 +1,6 @@
+{
+  "legacy_single_json_csv_db_exact_match": true,
+  "legacy_repeated_csv_db_exact_match": true,
+  "single_rows": 5,
+  "repeated_rows": 250
+}

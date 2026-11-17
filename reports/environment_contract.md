@@ -1,0 +1,28 @@
+> Historical Phase 0/1 contract for `StaticFJSPEnv`. The expanded campaign uses `EventFJSPEnv` with WAIT, dynamics, different reward normalization and actual PPO training. See `expanded_experiment_protocol.md` and `expanded_results.md` for the current contract.
+
+# Static FJSP environment and Phase 2 gate
+
+Implemented: `src/environments/static_fjsp.py`, Gymnasium reset/step contract and `action_masks()`.
+State has padded operation features (presence, job/operation positions, completion/running/readiness, remaining nominal workload, due date), operation-machine processing times (0 means ineligible), machine presence/busy/remaining-time/utilization, and clock. Static release times are all zero. Precedence is a chain within each job and represented by job/operation indices and completion state. Future dynamic events do not exist in this environment.
+
+Action `a = operation_index * max_machines + machine_index`. Only the current operation of an idle job on an idle eligible machine is valid. A masked action raises ValueError without mutation. Once no valid actions exist, the clock advances to the next completion event until an action is available or every operation has completed. Termination waits for completion, not assignment. Masks are all false after termination and must not be queried for policy sampling then.
+
+For scale S = sum over operations of maximum eligible processing time, r_t = -w_m (clock_{t+1}-clock_t)/S and on termination add -w_t total_tardiness/S. Therefore with gamma=1, sum r = -(w_m Cmax + w_t T_total)/S. Multiple assignments at the same instant do not multiply the time penalty. gamma<1 changes the optimization objective. GAE lambda affects estimator bias/variance, not this reward identity. No potential-based shaping has been added. Normalization depends on instance size; training across instances will weight their objectives differently than raw-time aggregation.
+
+**Policy-class limitation:** no intentional WAIT action. These are non-delay schedules; globally optimal schedules can require idling. CP-SAT searches a larger feasible set. Do not interpret a gap as solely learning quality. Before comparative RL claims, implement a non-zero-time WAIT-to-next-event action (masked when there is no future event) and test its feasibility, termination and reward identity. FIFO preserves inherited fixed job/input priority, not per-operation queue-entry timestamps.
+
+Variable instance sizes are supported through configurable fixed capacities and padding. A larger instance than the configured capacity is rejected. The MLP action head is not an unbounded variable graph model. Graph architectures will require an explicit graph observation adapter and permutation/size generalization tests.
+
+## Next experimental sequence
+
+1. Phase 2: install locked torch/SB3/sb3-contrib versions in a separately reviewed training dependency set; run real MaskablePPO interface smoke tests and interrupted checkpoint/resume tests (optimizer and RNG); then 5 training seeds. Use MultiInputPolicy with these dict observations. Generic Gymnasium check_env samples invalid actions, so a valid one-step fixture is checked generically and full MK01 is tested via masked rollouts.
+2. Split instances before tuning: MK01 demonstration is already inspected, so cannot be a pristine held-out test. Start with generated small instances for training, disjoint generated validation instances, then preregister held-out Brandimarte instances. Larger scale tests exceed fixed MLP capacity unless deliberately padded; report this limit.
+3. Fix the tuning budget (e.g. 10 configurations × 2 validation seeds), then lock config and train 5 fresh seeds. Compare equal environment-step budgets and separate wall-clock budgets. Do not use test data for early stopping. Evaluate exact same due dates/events per method.
+4. Phase 3: masked Double/Dueling DQN + PER. Replay includes next mask and terminal flag; terminal targets never maximize an all-false mask. Validate Bellman targets on toy problems before QR-DQN quantile loss. Record replay memory, TD errors and gradient updates.
+5. Phase 4: PyG heterogeneous operations/machines with precedence, eligibility and assignment edges. Pairwise actor/Q heads; pooled critic; explicit processing-time edge features. Compare GraphSAGE first, then attention only if its runtime is justified. Confirm graph permutation equivariance and changing graph sizes.
+6. Phase 5: external scenario tape with breakdown/recovery, arrivals and uncertainty; observed prefix only. Proposed breakdown semantics: interrupted operation pauses and resumes on the same machine, remaining work preserved, no restart penalty unless specified. Validate segmented operation durations and downtime before learning. Rolling-horizon CP-SAT must freeze completed/running decisions and obey the same information and wall-clock budget.
+7. Phase 6: measured RL priority/solution hint + CP-SAT. Charge RL inference, model build and solver time to one total budget. Report incumbent, bound and status; do not presume improvement. Transformer and ablations follow only validated baselines.
+
+Host: Apple M5, 16 GiB unified memory. Initial dispatch simulation/CP-SAT run on CPU. CPU vs MPS throughput has not been measured; no GPU acceleration claim. Avoid multiple CP-SAT workers for deterministic-search comparisons; wall-clock cutoffs still introduce run-to-run variation. Long training is not started in this phase.
+
+Deferred: dynamics, operational/rescheduling costs, PPO training/checkpoints, training convergence, sample efficiency, unseen-scale evaluations, ablations and statistical generalization. Empty training dashboard is intentional; no fabricated metrics.

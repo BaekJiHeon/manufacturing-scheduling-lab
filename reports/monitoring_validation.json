@@ -1,0 +1,295 @@
+{
+  "run_id": "20261117T053721Z-c77ef3ce",
+  "grafana_health": {
+    "database": "ok",
+    "version": "11.6.0",
+    "commit": "d2fdff9ee4d75c74bfd3a97c18a0b8e4d029f06e"
+  },
+  "postgres_health": {
+    "message": "Database Connection OK",
+    "status": "OK"
+  },
+  "prometheus_health": {
+    "details": {
+      "application": "Prometheus",
+      "features": {
+        "rulerApiEnabled": false
+      }
+    },
+    "message": "Successfully queried the Prometheus API.",
+    "status": "OK"
+  },
+  "dashboards": [
+    {
+      "id": 4,
+      "uid": "research-benchmark",
+      "orgId": 1,
+      "title": "Manufacturing RL | Algorithm Benchmark",
+      "uri": "db/manufacturing-rl-7c-algorithm-benchmark",
+      "url": "/d/research-benchmark/manufacturing-rl-7c-algorithm-benchmark",
+      "slug": "",
+      "type": "dash-db",
+      "tags": [
+        "manufacturing",
+        "verified"
+      ],
+      "isStarred": false,
+      "folderId": 1,
+      "folderUid": "ag4jm65xspq0wd",
+      "folderTitle": "Manufacturing RL",
+      "folderUrl": "/dashboards/f/ag4jm65xspq0wd/Manufacturing RL",
+      "sortMeta": 0,
+      "isDeleted": false
+    },
+    {
+      "id": 5,
+      "uid": "research-overview",
+      "orgId": 1,
+      "title": "Manufacturing RL | Experiment Overview",
+      "uri": "db/manufacturing-rl-7c-experiment-overview",
+      "url": "/d/research-overview/manufacturing-rl-7c-experiment-overview",
+      "slug": "",
+      "type": "dash-db",
+      "tags": [
+        "manufacturing",
+        "verified"
+      ],
+      "isStarred": false,
+      "folderId": 1,
+      "folderUid": "ag4jm65xspq0wd",
+      "folderTitle": "Manufacturing RL",
+      "folderUrl": "/dashboards/f/ag4jm65xspq0wd/Manufacturing RL",
+      "sortMeta": 0,
+      "isDeleted": false
+    },
+    {
+      "id": 3,
+      "uid": "manufacturing-rl-mk01",
+      "orgId": 1,
+      "title": "Manufacturing RL | MK01 Phase 0 and Phase 1",
+      "uri": "db/manufacturing-rl-7c-mk01-phase-0-and-phase-1",
+      "url": "/d/manufacturing-rl-mk01/manufacturing-rl-7c-mk01-phase-0-and-phase-1",
+      "slug": "",
+      "type": "dash-db",
+      "tags": [
+        "baseline",
+        "fjsp",
+        "manufacturing"
+      ],
+      "isStarred": false,
+      "folderId": 1,
+      "folderUid": "ag4jm65xspq0wd",
+      "folderTitle": "Manufacturing RL",
+      "folderUrl": "/dashboards/f/ag4jm65xspq0wd/Manufacturing RL",
+      "sortMeta": 0,
+      "isDeleted": false
+    },
+    {
+      "id": 6,
+      "uid": "research-scheduler",
+      "orgId": 1,
+      "title": "Manufacturing RL | Static Scheduler",
+      "uri": "db/manufacturing-rl-7c-static-scheduler",
+      "url": "/d/research-scheduler/manufacturing-rl-7c-static-scheduler",
+      "slug": "",
+      "type": "dash-db",
+      "tags": [
+        "manufacturing",
+        "verified"
+      ],
+      "isStarred": false,
+      "folderId": 1,
+      "folderUid": "ag4jm65xspq0wd",
+      "folderTitle": "Manufacturing RL",
+      "folderUrl": "/dashboards/f/ag4jm65xspq0wd/Manufacturing RL",
+      "sortMeta": 0,
+      "isDeleted": false
+    },
+    {
+      "id": 2,
+      "uid": "research-training",
+      "orgId": 1,
+      "title": "Manufacturing RL | Training and Host Resources",
+      "uri": "db/manufacturing-rl-7c-training-and-host-resources",
+      "url": "/d/research-training/manufacturing-rl-7c-training-and-host-resources",
+      "slug": "",
+      "type": "dash-db",
+      "tags": [
+        "manufacturing",
+        "verified"
+      ],
+      "isStarred": false,
+      "folderId": 1,
+      "folderUid": "ag4jm65xspq0wd",
+      "folderTitle": "Manufacturing RL",
+      "folderUrl": "/dashboards/f/ag4jm65xspq0wd/Manufacturing RL",
+      "sortMeta": 0,
+      "isDeleted": false
+    }
+  ],
+  "panels": [
+    {
+      "dashboard": "manufacturing-rl-mk01",
+      "panel": "Makespan by dispatching rule",
+      "rows": [
+        5
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "manufacturing-rl-mk01",
+      "panel": "Total tardiness (synthetic due dates)",
+      "rows": [
+        5
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "manufacturing-rl-mk01",
+      "panel": "Heuristic computation time",
+      "rows": [
+        5
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "manufacturing-rl-mk01",
+      "panel": "50 scenarios | mean tardiness (synthetic due dates)",
+      "rows": [
+        5
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "manufacturing-rl-mk01",
+      "panel": "50 scenarios | raw metrics",
+      "rows": [
+        250
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-benchmark",
+      "panel": "Mean makespan",
+      "rows": [
+        8
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-benchmark",
+      "panel": "Mean total tardiness",
+      "rows": [
+        8
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-benchmark",
+      "panel": "Runtime and solver bounds",
+      "rows": [
+        40
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-benchmark",
+      "panel": "Raw scheduling KPI",
+      "rows": [
+        40
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-overview",
+      "panel": "Run status",
+      "rows": [
+        1
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-overview",
+      "panel": "Current experiment",
+      "rows": [
+        1
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-overview",
+      "panel": "Evaluations and constraints",
+      "rows": [
+        8
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-scheduler",
+      "panel": "Static Gantt \u00b7 1 display second = 1 abstract benchmark unit",
+      "rows": [
+        30
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-scheduler",
+      "panel": "Exact operation assignments",
+      "rows": [
+        55
+      ],
+      "status": 200
+    },
+    {
+      "dashboard": "research-training",
+      "panel": "Training metrics \u00b7 no RL training has run",
+      "rows": [],
+      "status": 200
+    }
+  ],
+  "prometheus_targets": [
+    {
+      "discoveredLabels": {
+        "__address__": "host.docker.internal:9108",
+        "__metrics_path__": "/metrics",
+        "__scheme__": "http",
+        "__scrape_interval__": "10s",
+        "__scrape_timeout__": "10s",
+        "job": "manufacturing-host"
+      },
+      "labels": {
+        "instance": "host.docker.internal:9108",
+        "job": "manufacturing-host"
+      },
+      "scrapePool": "manufacturing-host",
+      "scrapeUrl": "http://host.docker.internal:9108/metrics",
+      "globalUrl": "http://host.docker.internal:9108/metrics",
+      "lastError": "",
+      "lastScrape": "2026-11-17T05:38:21.959001922Z",
+      "lastScrapeDuration": 0.005741875,
+      "health": "up",
+      "scrapeInterval": "10s",
+      "scrapeTimeout": "10s"
+    }
+  ],
+  "host_cpu": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "__name__": "manufacturing_cpu_percent",
+            "instance": "host.docker.internal:9108",
+            "job": "manufacturing-host"
+          },
+          "value": [
+            1794893907.997,
+            "9.6"
+          ]
+        }
+      ]
+    }
+  },
+  "visual_browser_check": "Not performed; health, provisioning and every SQL panel checked through the Grafana HTTP API. Figure PNGs independently visually reviewed."
+}

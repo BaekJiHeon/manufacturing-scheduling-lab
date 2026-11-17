@@ -1,0 +1,86 @@
+[
+  {
+    "name": "01_scalability",
+    "pixels": [
+      4274,
+      1908
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "svg_and_pdf_vector": true
+  },
+  {
+    "name": "02_objective_tradeoff",
+    "pixels": [
+      4274,
+      1908
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "svg_and_pdf_vector": true
+  },
+  {
+    "name": "03_dynamic_stability",
+    "pixels": [
+      4274,
+      1955
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "svg_and_pdf_vector": true
+  },
+  {
+    "name": "04_dynamic_gantt",
+    "pixels": [
+      4274,
+      2715
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "svg_and_pdf_vector": true
+  },
+  {
+    "name": "05_ppo_validation_raw",
+    "pixels": [
+      4274,
+      1950
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "svg_and_pdf_vector": true
+  },
+  {
+    "name": "06_ppo_quality_runtime",
+    "pixels": [
+      4274,
+      2030
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "svg_and_pdf_vector": true
+  },
+  {
+    "name": "07_external_scale_transfer",
+    "pixels": [
+      4274,
+      1912
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ],
+    "svg_and_pdf_vector": true
+  }
+]

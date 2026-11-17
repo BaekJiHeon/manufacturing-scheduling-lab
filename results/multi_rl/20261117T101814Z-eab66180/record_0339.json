@@ -1,0 +1,22 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 339,
+  "recorded_at": "2026-11-17T10:24:06.342584+00:00",
+  "record_type": "training",
+  "instance": "generated_train",
+  "scenario": "mixed",
+  "method": "GSPO-Sched",
+  "seed": 0,
+  "env_steps": 54727,
+  "elapsed_s": 15.93673758301884,
+  "training_steps_per_second": 3434.0152565675403,
+  "ram_mb": 504.4375,
+  "train_policy_gradient_loss": 1.3263197615742683e-06,
+  "train_entropy_loss": -0.9650151506066322,
+  "train_clip_fraction": 0.8671875,
+  "gradient_norm_before_clip": 0.09809578122803941,
+  "optimizer_updates": 704,
+  "train_episode_return": -0.725156307220459,
+  "zero_variance_groups": 0,
+  "unused_transitions": 0
+}

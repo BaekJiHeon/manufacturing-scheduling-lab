@@ -1,0 +1,222 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 873,
+  "recorded_at": "2026-11-17T10:28:22.434739+00:00",
+  "record_type": "test",
+  "instance": "GEN9200016",
+  "scenario": "fresh_generated_test",
+  "method": "MaskedPQN",
+  "seed": 2,
+  "env_steps": 65536,
+  "makespan": 58,
+  "total_tardiness": 16,
+  "mean_tardiness": 4.0,
+  "on_time_delivery_rate": 0.5,
+  "machine_utilization": 0.3936781609195402,
+  "machine_idle_time": 211,
+  "constraint_violation_count": 0,
+  "start_shift": null,
+  "machine_changes": null,
+  "reference_operations": null,
+  "stability_cost": null,
+  "normalized_objective": 0.3924050632911393,
+  "normalization_scale": 158,
+  "schedule": [
+    {
+      "job": 0,
+      "operation": 0,
+      "machine": 4,
+      "start": 0,
+      "end": 4,
+      "duration": 4
+    },
+    {
+      "job": 2,
+      "operation": 0,
+      "machine": 3,
+      "start": 0,
+      "end": 8,
+      "duration": 8
+    },
+    {
+      "job": 0,
+      "operation": 1,
+      "machine": 4,
+      "start": 4,
+      "end": 14,
+      "duration": 10
+    },
+    {
+      "job": 2,
+      "operation": 1,
+      "machine": 5,
+      "start": 8,
+      "end": 17,
+      "duration": 9
+    },
+    {
+      "job": 1,
+      "operation": 0,
+      "machine": 3,
+      "start": 8,
+      "end": 14,
+      "duration": 6
+    },
+    {
+      "job": 3,
+      "operation": 0,
+      "machine": 4,
+      "start": 14,
+      "end": 20,
+      "duration": 6
+    },
+    {
+      "job": 1,
+      "operation": 1,
+      "machine": 3,
+      "start": 14,
+      "end": 20,
+      "duration": 6
+    },
+    {
+      "job": 2,
+      "operation": 2,
+      "machine": 1,
+      "start": 17,
+      "end": 24,
+      "duration": 7
+    },
+    {
+      "job": 3,
+      "operation": 1,
+      "machine": 3,
+      "start": 20,
+      "end": 28,
+      "duration": 8
+    },
+    {
+      "job": 1,
+      "operation": 2,
+      "machine": 5,
+      "start": 20,
+      "end": 22,
+      "duration": 2
+    },
+    {
+      "job": 2,
+      "operation": 3,
+      "machine": 1,
+      "start": 24,
+      "end": 26,
+      "duration": 2
+    },
+    {
+      "job": 2,
+      "operation": 4,
+      "machine": 4,
+      "start": 26,
+      "end": 34,
+      "duration": 8
+    },
+    {
+      "job": 0,
+      "operation": 2,
+      "machine": 3,
+      "start": 28,
+      "end": 33,
+      "duration": 5
+    },
+    {
+      "job": 3,
+      "operation": 2,
+      "machine": 2,
+      "start": 28,
+      "end": 30,
+      "duration": 2
+    },
+    {
+      "job": 3,
+      "operation": 3,
+      "machine": 2,
+      "start": 30,
+      "end": 37,
+      "duration": 7
+    },
+    {
+      "job": 0,
+      "operation": 3,
+      "machine": 5,
+      "start": 33,
+      "end": 34,
+      "duration": 1
+    },
+    {
+      "job": 0,
+      "operation": 4,
+      "machine": 4,
+      "start": 34,
+      "end": 43,
+      "duration": 9
+    },
+    {
+      "job": 2,
+      "operation": 5,
+      "machine": 1,
+      "start": 34,
+      "end": 43,
+      "duration": 9
+    },
+    {
+      "job": 3,
+      "operation": 4,
+      "machine": 0,
+      "start": 37,
+      "end": 40,
+      "duration": 3
+    },
+    {
+      "job": 3,
+      "operation": 5,
+      "machine": 2,
+      "start": 40,
+      "end": 48,
+      "duration": 8
+    },
+    {
+      "job": 0,
+      "operation": 5,
+      "machine": 3,
+      "start": 43,
+      "end": 45,
+      "duration": 2
+    },
+    {
+      "job": 1,
+      "operation": 3,
+      "machine": 4,
+      "start": 43,
+      "end": 50,
+      "duration": 7
+    },
+    {
+      "job": 1,
+      "operation": 4,
+      "machine": 5,
+      "start": 50,
+      "end": 58,
+      "duration": 8
+    }
+  ],
+  "outages": [],
+  "observed_events": [],
+  "runtime_ms": 2.669708919711411,
+  "decision_count": 27,
+  "wait_count": 4,
+  "mean_inference_ms": 0.06135799318414043,
+  "p95_inference_ms": 0.07370015373453496,
+  "total_inference_ms": 1.6566658159717917,
+  "objective_score": 0.62,
+  "status": "FEASIBLE",
+  "episode_return": -0.6200000000000002,
+  "stability_applicable": false
+}

@@ -1,0 +1,8 @@
+class: src.environments.static_fjsp.StaticFJSPEnv
+max_operations: 55
+max_machines: 6
+makespan_weight: 1.0
+tardiness_weight: 0.0
+intentional_wait_action: false
+reward_scale: sum_of_maximum_operation_processing_times
+dynamic_events: false

@@ -1,0 +1,29 @@
+{
+  "purpose": "Portfolio publication checks",
+  "tests": {
+    "passed": 41,
+    "warnings": 1,
+    "warning": "Existing Gymnasium observation-space upper bound is infinity"
+  },
+  "portfolio_relative_links": "all resolve",
+  "dashboard": {
+    "removed_panel_ids": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1010
+    ],
+    "remaining_panels": 8,
+    "all_datasource_queries_pass": true
+  },
+  "excluded": [
+    "local SQL session backups",
+    "runtime",
+    "checkpoints",
+    "logs",
+    "local installation notes",
+    "dashboard screenshots containing removed panels"
+  ],
+  "scope": "No training rerun; historical measured outcomes retained. Fresh clone deployment on another OS is not validated."
+}

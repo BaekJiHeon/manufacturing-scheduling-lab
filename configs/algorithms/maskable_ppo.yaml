@@ -1,0 +1,13 @@
+# Historical Phase 1 design target. Active executable experiment: ppo_pilot.json.
+status: interface_prepared_not_trained
+library: sb3_contrib.MaskablePPO
+policy: MultiInputPolicy
+learning_rate: 0.0003
+n_steps: 1024
+batch_size: 64
+n_epochs: 10
+gamma: 1.0
+gae_lambda: 0.95
+ent_coef: 0.01
+max_grad_norm: 0.5
+seeds: [0, 1, 2, 3, 4]

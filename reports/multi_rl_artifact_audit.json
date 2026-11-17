@@ -1,0 +1,15 @@
+{
+  "schedule_records_checked": {
+    "multi_rl": 900
+  },
+  "decision_schedules_checked": 128,
+  "feasibility_violations": 0,
+  "source_hashes_match": true,
+  "warnings": [
+    {
+      "run_id": "20261117T101814Z-eab66180",
+      "step": 569,
+      "kind": "solver_response_objective_mismatch"
+    }
+  ]
+}

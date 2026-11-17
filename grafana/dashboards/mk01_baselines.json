@@ -1,0 +1,202 @@
+{
+  "uid": "manufacturing-rl-mk01",
+  "title": "Manufacturing RL | MK01 Phase 0 and Phase 1",
+  "tags": [
+    "manufacturing",
+    "fjsp",
+    "baseline"
+  ],
+  "schemaVersion": 40,
+  "version": 1,
+  "refresh": "30s",
+  "time": {
+    "from": "now-7d",
+    "to": "now"
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Makespan by dispatching rule",
+      "type": "barchart",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "postgres"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT method, makespan FROM experiment_metrics WHERE instance='MK01' ORDER BY method",
+          "editorMode": "code"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "color": {
+            "mode": "palette-classic"
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "orientation": "horizontal",
+        "xField": "method",
+        "showValue": "always",
+        "stacking": "none",
+        "groupWidth": 0.7,
+        "barWidth": 0.85
+      }
+    },
+    {
+      "id": 2,
+      "title": "Total tardiness (synthetic due dates)",
+      "type": "barchart",
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 12,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "postgres"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT method, total_tardiness FROM experiment_metrics WHERE instance='MK01' ORDER BY method",
+          "editorMode": "code"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "color": {
+            "mode": "palette-classic"
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "orientation": "horizontal",
+        "xField": "method",
+        "showValue": "always",
+        "stacking": "none",
+        "groupWidth": 0.7,
+        "barWidth": 0.85
+      }
+    },
+    {
+      "id": 3,
+      "title": "Heuristic computation time",
+      "type": "barchart",
+      "gridPos": {
+        "x": 0,
+        "y": 9,
+        "w": 12,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "postgres"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT method, runtime_ms FROM experiment_metrics WHERE instance='MK01' ORDER BY method",
+          "editorMode": "code"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ms",
+          "color": {
+            "mode": "palette-classic"
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "orientation": "horizontal",
+        "xField": "method",
+        "showValue": "always",
+        "stacking": "none",
+        "groupWidth": 0.7,
+        "barWidth": 0.85
+      }
+    },
+    {
+      "id": 4,
+      "title": "50 scenarios | mean tardiness (synthetic due dates)",
+      "type": "barchart",
+      "gridPos": {
+        "x": 12,
+        "y": 9,
+        "w": 12,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "postgres"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT method, ROUND(AVG(total_tardiness)::numeric,2) AS mean_tardiness FROM repeated_experiment_metrics GROUP BY method ORDER BY method",
+          "editorMode": "code"
+        }
+      ],
+      "options": {
+        "orientation": "horizontal",
+        "xField": "method",
+        "showValue": "always",
+        "stacking": "none"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none"
+        },
+        "overrides": []
+      }
+    },
+    {
+      "id": 5,
+      "title": "50 scenarios | raw metrics",
+      "type": "table",
+      "gridPos": {
+        "x": 0,
+        "y": 18,
+        "w": 24,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "postgres"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT scenario_seed, method, makespan, total_tardiness, runtime_ms FROM repeated_experiment_metrics ORDER BY scenario_seed, method",
+          "editorMode": "code"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none"
+        },
+        "overrides": []
+      }
+    }
+  ]
+}

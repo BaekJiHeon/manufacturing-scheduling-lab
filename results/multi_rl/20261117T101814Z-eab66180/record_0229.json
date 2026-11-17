@@ -1,0 +1,15 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 229,
+  "recorded_at": "2026-11-17T10:22:27.595561+00:00",
+  "record_type": "validation",
+  "instance": "generated_validation",
+  "scenario": "mixed",
+  "method": "GRPO-Sched",
+  "seed": 0,
+  "env_steps": 33755,
+  "objective_score": 0.5960511363636363,
+  "makespan": 53.5,
+  "total_tardiness": 45.75,
+  "episode_return": -0.5960511363636365
+}

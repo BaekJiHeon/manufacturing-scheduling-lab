@@ -1,0 +1,14 @@
+{
+  "postgres_tmpfs_restart_restored": true,
+  "counts": {
+    "20261117T055818Z-d1b5e3ef": 216,
+    "20261117T055312Z-e99071d3": 240,
+    "20261117T060744Z-43676ed5": 450,
+    "20261117T055516Z-ffeba27d": 34
+  },
+  "grafana": {
+    "database": "ok",
+    "version": "11.6.0",
+    "commit": "d2fdff9ee4d75c74bfd3a97c18a0b8e4d029f06e"
+  }
+}

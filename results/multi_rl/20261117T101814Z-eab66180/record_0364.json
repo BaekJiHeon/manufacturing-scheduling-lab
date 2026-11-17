@@ -1,0 +1,21 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 364,
+  "recorded_at": "2026-11-17T10:24:29.212127+00:00",
+  "record_type": "training_summary",
+  "instance": "generated_train",
+  "scenario": "mixed",
+  "method": "GSPO-Sched",
+  "seed": 1,
+  "env_steps": 65536,
+  "training_time_s": 19.131466791965067,
+  "training_timing_scope": "learn + periodic validation + record IO + checkpoint save",
+  "parameter_count": 1326397,
+  "unused_transitions": 540,
+  "checkpoint_path": "checkpoints/20261117T101814Z-eab66180/GSPO-Sched_seed1_final.pt",
+  "checkpoint_bytes": 15938584,
+  "checkpoint_sha256": "e48272334048008f67564b8c7ec7abfd436f0bca3a14cd7724d9791431dbc882",
+  "checkpoint_roundtrip": true,
+  "device": "cpu",
+  "status": "completed"
+}

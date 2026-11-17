@@ -1,0 +1,19 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 193,
+  "recorded_at": "2026-11-17T10:22:01.160667+00:00",
+  "record_type": "training",
+  "instance": "generated_train",
+  "scenario": "mixed",
+  "method": "MaskedPQN",
+  "seed": 3,
+  "env_steps": 57344,
+  "elapsed_s": 14.236154000042006,
+  "training_steps_per_second": 4028.0542062013938,
+  "ram_mb": 185.875,
+  "train_td_loss": 0.0017383204904035665,
+  "gradient_norm_before_clip": 0.06355332024395466,
+  "epsilon": 0.05,
+  "optimizer_updates": 1792,
+  "train_episode_return": -0.6951052003552003
+}

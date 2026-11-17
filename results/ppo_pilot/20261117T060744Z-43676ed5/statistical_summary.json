@@ -1,0 +1,35 @@
+{
+  "generated_test_units": 10,
+  "test": "exploratory paired Wilcoxon on per-instance mean across PPO seeds vs CP-SAT5s; no confirmatory claim",
+  "statistic": 0.0,
+  "p_value": 0.001953125,
+  "seed_summary": [
+    {
+      "scenario": "external_dynamic",
+      "relative_cost_gap_n": 5,
+      "relative_cost_gap_mean": 0.9110478100833248,
+      "relative_cost_gap_std": 0.08441458027927635,
+      "relative_cost_gap_worst": 0.9708844520295363,
+      "relative_cost_gap_ci95_low": 0.8062332648270659,
+      "relative_cost_gap_ci95_high": 1.0158623553395838
+    },
+    {
+      "scenario": "external_static",
+      "relative_cost_gap_n": 5,
+      "relative_cost_gap_mean": 0.5448183061355009,
+      "relative_cost_gap_std": 0.05423048984346091,
+      "relative_cost_gap_worst": 0.6370165179162888,
+      "relative_cost_gap_ci95_low": 0.47748225929192056,
+      "relative_cost_gap_ci95_high": 0.6121543529790812
+    },
+    {
+      "scenario": "generated_test",
+      "relative_cost_gap_n": 5,
+      "relative_cost_gap_mean": 0.636074183862403,
+      "relative_cost_gap_std": 0.10186452621840372,
+      "relative_cost_gap_worst": 0.7518701068066026,
+      "relative_cost_gap_ci95_low": 0.5095926689629277,
+      "relative_cost_gap_ci95_high": 0.7625556987618783
+    }
+  ]
+}

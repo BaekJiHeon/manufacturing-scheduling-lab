@@ -1,0 +1,27 @@
+{
+  "run_id": "20261117T060744Z-43676ed5",
+  "planning_calls": 118,
+  "checks": [
+    {
+      "panel": "Host CPU usage",
+      "value": 22.9,
+      "ok": true
+    },
+    {
+      "panel": "Host memory usage",
+      "value": 81.1,
+      "ok": true
+    },
+    {
+      "panel": "CP-SAT budget used \u00b7 P95",
+      "value": 100.12889438075945,
+      "ok": true
+    },
+    {
+      "panel": "CP-SAT planning time \u00b7 P95",
+      "value": 5001.497706217924,
+      "ok": true
+    }
+  ],
+  "independent_json_quantiles_match": true
+}

@@ -1,0 +1,13 @@
+{
+  "run_id": "20261117T053721Z-c77ef3ce",
+  "dependency_lock_matches": true,
+  "pdf_without_embedded_raster": {
+    "makespan_benchmark.pdf": true,
+    "tardiness_benchmark.pdf": true,
+    "runtime_benchmark.pdf": true,
+    "objective_tradeoff.pdf": true,
+    "cpsat_static_gantt.pdf": true
+  },
+  "figure_pngs_visually_reviewed": 5,
+  "original_data_results_figures_unchanged": true
+}

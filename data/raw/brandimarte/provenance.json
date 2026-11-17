@@ -1,0 +1,518 @@
+{
+  "sha": "8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+  "files": [
+    {
+      "id": "mk02",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk02.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "44360812291e71cb7f891a21495eecfa281b3f196940cd13d5f6c2a528679ad2"
+    },
+    {
+      "id": "mk03",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk03.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "ede843eb1a261ebbeef09265d4de6adcf578b369d1af04cc779f91afbf73cd92"
+    },
+    {
+      "id": "mk04",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk04.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "b751cfef26d2b4a2af392107e69a9272eb3eebbd960592ed6557a1166a8670ee"
+    },
+    {
+      "id": "mk05",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk05.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "5b02c162a32a2089736310842d63ca84a14c6b2c471581d425e54f0edde0aa74"
+    },
+    {
+      "id": "mk06",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk06.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "a9978b79a4d3b22e7eb6721f64a9b08a3e9ee0f24a7dfbbf874fa021cf6049d1"
+    },
+    {
+      "id": "mk07",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk07.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "77f883325b0cde6b1349a015c6dccdbb2d80c41d6452e56d1bc148587a3c7e7a"
+    },
+    {
+      "id": "mk08",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk08.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "d06776e82c0fe7b00a705bda06759ad4668025fefd1125f6639fd62d9a8bbf18"
+    },
+    {
+      "id": "mk09",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk09.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "93a7f6dc3ff60d87b88511f7f0a73ce7116f9e1399822176bb8bd0adf51b80eb"
+    },
+    {
+      "id": "mk10",
+      "url": "https://api.github.com/repos/ScheduleOpt/benchmarks/contents/flexible-jobshop/instances/fjsp/Brandimarte1993/mk10.txt?ref=8a6e36ef31263d36975e56fb481e0ba04e188d6f",
+      "sha256": "f926d3522a57571182799de36be8d883f2b9996740a7a05292687edcab6d6d06"
+    }
+  ],
+  "bks": [
+    {
+      "instance": "mk01",
+      "size": "10 x 6",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 40,
+      "upper_bound": 40,
+      "history": {
+        "lb": [
+          {
+            "value": 40,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 40,
+            "date": "2013-01-01",
+            "solver": "Schutt2013",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 40,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 40,
+            "date": "2000-01-01",
+            "solver": "MG2000",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk02",
+      "size": "10 x 6",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 26,
+      "upper_bound": 26,
+      "history": {
+        "lb": [
+          {
+            "value": 26,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 26,
+            "date": "2013-11-22",
+            "solver": "CPO2013",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 26,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 26,
+            "date": "2000-01-01",
+            "solver": "MG2000",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk03",
+      "size": "15 x 8",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 204,
+      "upper_bound": 204,
+      "history": {
+        "lb": [
+          {
+            "value": 204,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 204,
+            "date": "2010-01-01",
+            "solver": "BHHL2010",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 204,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 204,
+            "date": "2000-01-01",
+            "solver": "MG2000",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk04",
+      "size": "15 x 8",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 60,
+      "upper_bound": 60,
+      "history": {
+        "lb": [
+          {
+            "value": 60,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 60,
+            "date": "2013-01-01",
+            "solver": "Schutt2013",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 60,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 60,
+            "date": "2000-01-01",
+            "solver": "MG2000",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk05",
+      "size": "15 x 4",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 172,
+      "upper_bound": 172,
+      "history": {
+        "lb": [
+          {
+            "value": 172,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 172,
+            "date": "2014-01-01",
+            "solver": "Quintiq",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 172,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 172,
+            "date": "2008-01-01",
+            "solver": "ZG2008",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk06",
+      "size": "10 x 15",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 57,
+      "upper_bound": 57,
+      "history": {
+        "lb": [
+          {
+            "value": 57,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 60,
+            "certificate": "no"
+          },
+          {
+            "value": 57,
+            "date": "2013-11-22",
+            "solver": "CPO2013",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 57,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 60,
+            "certificate": "no"
+          },
+          {
+            "value": 57,
+            "date": "2013-01-01",
+            "solver": "Quintiq",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk07",
+      "size": "20 x 5",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 139,
+      "upper_bound": 139,
+      "history": {
+        "lb": [
+          {
+            "value": 139,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 60,
+            "certificate": "no"
+          },
+          {
+            "value": 139,
+            "date": "2014-01-01",
+            "solver": "Quintiq",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 139,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 60,
+            "certificate": "no"
+          },
+          {
+            "value": 139,
+            "date": "2008-01-01",
+            "solver": "ZG2008",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk08",
+      "size": "20 x 10",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 523,
+      "upper_bound": 523,
+      "history": {
+        "lb": [
+          {
+            "value": 523,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 523,
+            "date": "2010-01-01",
+            "solver": "BHHL2010",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 523,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 523,
+            "date": "2000-01-01",
+            "solver": "MG2000",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk09",
+      "size": "20 x 10",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "closed",
+      "lower_bound": 307,
+      "upper_bound": 307,
+      "history": {
+        "lb": [
+          {
+            "value": 307,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 307,
+            "date": "2013-01-01",
+            "solver": "Schutt2013",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 307,
+            "date": "2025-08-29",
+            "solver": "OptalCP",
+            "hardware": "Intel 11th Gen Core i7-1185G7",
+            "time": 1,
+            "certificate": "no"
+          },
+          {
+            "value": 307,
+            "date": "2000-01-01",
+            "solver": "MG2000",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    },
+    {
+      "instance": "mk10",
+      "size": "20 x 15",
+      "family": "mk",
+      "family_long": "Brandimarte 1993",
+      "type": "flexible jobshop",
+      "status": "open",
+      "lower_bound": 189,
+      "upper_bound": 193,
+      "history": {
+        "lb": [
+          {
+            "value": 189,
+            "date": "2014-01-01",
+            "solver": "Quintiq",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ],
+        "ub": [
+          {
+            "value": 193,
+            "date": "2026-01-01",
+            "solver": "Quintiq",
+            "hardware": null,
+            "time": null,
+            "certificate": "no"
+          }
+        ]
+      }
+    }
+  ],
+  "bks_url": "https://github.com/ScheduleOpt/benchmarks/blob/8a6e36ef31263d36975e56fb481e0ba04e188d6f/flexible-jobshop/solutions/bks.json",
+  "conversion": "Decoded UTF-8 source text, no token or whitespace changes; bks is a selected MK01-MK10 subset of upstream JSON"
+}

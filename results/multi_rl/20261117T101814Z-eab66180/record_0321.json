@@ -1,0 +1,15 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 321,
+  "recorded_at": "2026-11-17T10:23:50.168456+00:00",
+  "record_type": "training",
+  "instance": "generated_train",
+  "scenario": "mixed",
+  "method": "GRPO-Sched",
+  "seed": 4,
+  "env_steps": 65536,
+  "elapsed_s": 18.076765000005253,
+  "training_steps_per_second": 3625.427447885778,
+  "ram_mb": 562.109375,
+  "unused_transitions": 686
+}

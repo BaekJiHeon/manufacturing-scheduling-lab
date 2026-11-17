@@ -1,0 +1,1 @@
+SELECT step,method,seed,makespan,total_tardiness,machine_utilization,on_time_delivery_rate,constraint_violation_count FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} AND instance=${dataset:sqlstring} AND method IN (${method:sqlstring}) AND seed IN (${seed:csv}) ORDER BY step;

@@ -1,0 +1,21 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 87,
+  "recorded_at": "2026-11-17T10:20:25.510260+00:00",
+  "record_type": "training_summary",
+  "instance": "generated_train",
+  "scenario": "mixed",
+  "method": "MaskablePPO",
+  "seed": 3,
+  "env_steps": 65536,
+  "training_time_s": 31.166958583984524,
+  "training_timing_scope": "learn + periodic validation + record IO + checkpoint save",
+  "parameter_count": 2149694,
+  "unused_transitions": 0,
+  "checkpoint_path": "checkpoints/20261117T101814Z-eab66180/MaskablePPO_seed3_final.zip",
+  "checkpoint_bytes": 26045207,
+  "checkpoint_sha256": "2306a825868524d3c17937fdd312c0748c5174125ee3e44823bddd2339820217",
+  "checkpoint_roundtrip": true,
+  "device": "cpu",
+  "status": "completed"
+}

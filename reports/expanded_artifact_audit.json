@@ -1,0 +1,110 @@
+{
+  "schedule_records_checked": {
+    "expanded_static": 240,
+    "objectives_dynamic": 216,
+    "ppo_pilot": 260
+  },
+  "decision_schedules_checked": 520,
+  "feasibility_violations": 0,
+  "source_hashes_match": true,
+  "warnings": [
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 32,
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 34,
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 57,
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 149,
+      "event": "initial",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 156,
+      "event": "initial",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 157,
+      "event": "initial",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 165,
+      "event": "initial",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 167,
+      "event": "arrival",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 172,
+      "event": "recovery",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 173,
+      "event": "breakdown",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 181,
+      "event": "arrival",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 191,
+      "event": "arrival",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 191,
+      "event": "recovery",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T055818Z-d1b5e3ef",
+      "step": 215,
+      "event": "arrival",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T060744Z-43676ed5",
+      "step": 284,
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T060744Z-43676ed5",
+      "step": 308,
+      "event": "initial",
+      "kind": "solver_response_objective_mismatch"
+    },
+    {
+      "run_id": "20261117T060744Z-43676ed5",
+      "step": 318,
+      "event": "initial",
+      "kind": "solver_response_objective_mismatch"
+    }
+  ]
+}

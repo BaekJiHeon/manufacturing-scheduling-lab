@@ -1,0 +1,10 @@
+apiVersion: 1
+providers:
+  - name: Manufacturing RL
+    orgId: 1
+    folder: Manufacturing RL
+    type: file
+    disableDeletion: true
+    updateIntervalSeconds: 10
+    options:
+      path: /etc/grafana/research-dashboards

@@ -1,0 +1,213 @@
+{
+  "uid": "research-benchmark",
+  "title": "Manufacturing RL | Algorithm Benchmark",
+  "tags": [
+    "manufacturing",
+    "verified"
+  ],
+  "schemaVersion": 40,
+  "version": 1,
+  "refresh": "10s",
+  "time": {
+    "from": "now-7d",
+    "to": "now"
+  },
+  "templating": {
+    "list": [
+      {
+        "name": "run_id",
+        "type": "query",
+        "datasource": {
+          "uid": "manufacturing_pg",
+          "type": "grafana-postgresql-datasource"
+        },
+        "query": "SELECT run_id FROM research_runs ORDER BY created_at DESC",
+        "definition": "SELECT run_id FROM research_runs ORDER BY created_at DESC",
+        "refresh": 1,
+        "multi": false,
+        "includeAll": false,
+        "sort": 0
+      },
+      {
+        "name": "dataset",
+        "type": "query",
+        "datasource": {
+          "uid": "manufacturing_pg",
+          "type": "grafana-postgresql-datasource"
+        },
+        "query": "SELECT DISTINCT instance FROM evaluation_metrics WHERE run_id=${run_id:sqlstring}",
+        "definition": "SELECT DISTINCT instance FROM evaluation_metrics WHERE run_id=${run_id:sqlstring}",
+        "refresh": 1,
+        "multi": false,
+        "includeAll": false,
+        "sort": 0
+      },
+      {
+        "name": "method",
+        "type": "query",
+        "datasource": {
+          "uid": "manufacturing_pg",
+          "type": "grafana-postgresql-datasource"
+        },
+        "query": "SELECT DISTINCT method FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} ORDER BY method",
+        "definition": "SELECT DISTINCT method FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} ORDER BY method",
+        "refresh": 1,
+        "multi": true,
+        "includeAll": true,
+        "sort": 0,
+        "current": {
+          "selected": true,
+          "text": "All",
+          "value": "$__all"
+        }
+      },
+      {
+        "name": "seed",
+        "type": "query",
+        "datasource": {
+          "uid": "manufacturing_pg",
+          "type": "grafana-postgresql-datasource"
+        },
+        "query": "SELECT DISTINCT seed FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} ORDER BY seed",
+        "definition": "SELECT DISTINCT seed FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} ORDER BY seed",
+        "refresh": 1,
+        "multi": true,
+        "includeAll": true,
+        "sort": 0,
+        "current": {
+          "selected": true,
+          "text": "All",
+          "value": "$__all"
+        }
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 201,
+      "title": "Mean makespan",
+      "type": "barchart",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "grafana-postgresql-datasource"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT method, AVG(makespan) AS makespan FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} AND instance=${dataset:sqlstring} AND method IN (${method:sqlstring}) AND seed IN (${seed:csv}) GROUP BY method ORDER BY method",
+          "editorMode": "code",
+          "rawQuery": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "orientation": "horizontal",
+        "xField": "method",
+        "showValue": "always",
+        "stacking": "none"
+      }
+    },
+    {
+      "id": 202,
+      "title": "Mean total tardiness",
+      "type": "barchart",
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 12,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "grafana-postgresql-datasource"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT method, AVG(total_tardiness) AS tardiness FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} AND instance=${dataset:sqlstring} AND method IN (${method:sqlstring}) AND seed IN (${seed:csv}) GROUP BY method ORDER BY method",
+          "editorMode": "code",
+          "rawQuery": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "orientation": "horizontal",
+        "xField": "method",
+        "showValue": "always",
+        "stacking": "none"
+      }
+    },
+    {
+      "id": 203,
+      "title": "Runtime and solver bounds",
+      "type": "table",
+      "gridPos": {
+        "x": 0,
+        "y": 9,
+        "w": 24,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "grafana-postgresql-datasource"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT method,seed,status,time_limit_s,runtime_ms,solver_runtime_ms,best_bound,makespan,100*bks_gap AS bks_gap_percent FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} AND instance=${dataset:sqlstring} AND method IN (${method:sqlstring}) AND seed IN (${seed:csv}) ORDER BY method,seed",
+          "editorMode": "code",
+          "rawQuery": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {}
+    },
+    {
+      "id": 204,
+      "title": "Raw scheduling KPI",
+      "type": "table",
+      "gridPos": {
+        "x": 0,
+        "y": 18,
+        "w": 24,
+        "h": 9
+      },
+      "datasource": {
+        "uid": "manufacturing_pg",
+        "type": "grafana-postgresql-datasource"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT step,method,seed,makespan,total_tardiness,machine_utilization,on_time_delivery_rate,constraint_violation_count FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} AND instance=${dataset:sqlstring} AND method IN (${method:sqlstring}) AND seed IN (${seed:csv}) ORDER BY step",
+          "editorMode": "code",
+          "rawQuery": true
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {}
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+SELECT method, COUNT(*) AS evaluations, MIN(makespan) AS best_makespan, MIN(total_tardiness) AS best_tardiness, SUM(constraint_violation_count) AS violations FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} AND instance=${dataset:sqlstring} AND method IN (${method:sqlstring}) AND seed IN (${seed:csv}) GROUP BY method ORDER BY method;

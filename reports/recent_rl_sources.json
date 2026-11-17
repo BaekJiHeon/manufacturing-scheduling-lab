@@ -1,0 +1,22 @@
+[
+  {
+    "name": "PQN",
+    "paper": "https://arxiv.org/abs/2407.04811",
+    "publication": "ICLR 2025; preprint 2024",
+    "author_repository": "https://github.com/mttga/purejaxql",
+    "reference_implementation": "https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/pqn.py",
+    "reference_download_sha256": "416b68cc1d1ab7b691618eecf9763020e56e5918182d1687ecede0f0a050332d"
+  },
+  {
+    "name": "GRPO",
+    "paper": "https://arxiv.org/html/2402.03300v3",
+    "equations": "3 and outcome supervision section4.1.2",
+    "year": 2024
+  },
+  {
+    "name": "GSPO",
+    "paper": "https://arxiv.org/html/2507.18071v2",
+    "equations": "5-7, full sequence objective (not GSPO-token)",
+    "year": 2025
+  }
+]

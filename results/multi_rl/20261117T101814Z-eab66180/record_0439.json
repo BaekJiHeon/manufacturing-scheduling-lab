@@ -1,0 +1,186 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 439,
+  "recorded_at": "2026-11-17T10:25:33.598680+00:00",
+  "record_type": "test",
+  "instance": "GEN9200002",
+  "scenario": "fresh_generated_test",
+  "method": "CP-SAT",
+  "seed": 0,
+  "budget_s": 5,
+  "makespan": 31,
+  "total_tardiness": 0,
+  "mean_tardiness": 0.0,
+  "on_time_delivery_rate": 1.0,
+  "machine_utilization": 0.6532258064516129,
+  "machine_idle_time": 43,
+  "constraint_violation_count": 0,
+  "start_shift": 0,
+  "machine_changes": 0,
+  "reference_operations": 0,
+  "stability_cost": 0.0,
+  "normalized_objective": 0.2246376811594203,
+  "normalization_scale": 138,
+  "schedule": [
+    {
+      "job": 0,
+      "operation": 0,
+      "machine": 2,
+      "start": 0,
+      "end": 4,
+      "duration": 4
+    },
+    {
+      "job": 0,
+      "operation": 1,
+      "machine": 1,
+      "start": 5,
+      "end": 10,
+      "duration": 5
+    },
+    {
+      "job": 0,
+      "operation": 2,
+      "machine": 2,
+      "start": 10,
+      "end": 17,
+      "duration": 7
+    },
+    {
+      "job": 0,
+      "operation": 3,
+      "machine": 2,
+      "start": 17,
+      "end": 26,
+      "duration": 9
+    },
+    {
+      "job": 0,
+      "operation": 4,
+      "machine": 2,
+      "start": 26,
+      "end": 31,
+      "duration": 5
+    },
+    {
+      "job": 1,
+      "operation": 0,
+      "machine": 2,
+      "start": 4,
+      "end": 8,
+      "duration": 4
+    },
+    {
+      "job": 1,
+      "operation": 1,
+      "machine": 0,
+      "start": 9,
+      "end": 14,
+      "duration": 5
+    },
+    {
+      "job": 1,
+      "operation": 2,
+      "machine": 3,
+      "start": 14,
+      "end": 17,
+      "duration": 3
+    },
+    {
+      "job": 2,
+      "operation": 0,
+      "machine": 1,
+      "start": 0,
+      "end": 1,
+      "duration": 1
+    },
+    {
+      "job": 2,
+      "operation": 1,
+      "machine": 1,
+      "start": 10,
+      "end": 20,
+      "duration": 10
+    },
+    {
+      "job": 2,
+      "operation": 2,
+      "machine": 3,
+      "start": 20,
+      "end": 22,
+      "duration": 2
+    },
+    {
+      "job": 2,
+      "operation": 3,
+      "machine": 0,
+      "start": 22,
+      "end": 29,
+      "duration": 7
+    },
+    {
+      "job": 3,
+      "operation": 0,
+      "machine": 0,
+      "start": 0,
+      "end": 1,
+      "duration": 1
+    },
+    {
+      "job": 3,
+      "operation": 1,
+      "machine": 1,
+      "start": 1,
+      "end": 5,
+      "duration": 4
+    },
+    {
+      "job": 3,
+      "operation": 2,
+      "machine": 0,
+      "start": 5,
+      "end": 9,
+      "duration": 4
+    },
+    {
+      "job": 3,
+      "operation": 3,
+      "machine": 2,
+      "start": 9,
+      "end": 10,
+      "duration": 1
+    },
+    {
+      "job": 3,
+      "operation": 4,
+      "machine": 1,
+      "start": 20,
+      "end": 27,
+      "duration": 7
+    },
+    {
+      "job": 3,
+      "operation": 5,
+      "machine": 0,
+      "start": 29,
+      "end": 31,
+      "duration": 2
+    }
+  ],
+  "status": "OPTIMAL",
+  "solution_source": "CP-SAT",
+  "solver_has_incumbent": true,
+  "solver_objective": 0.2246376811594203,
+  "best_bound": 0.2246376811594203,
+  "relative_bound_gap": 0,
+  "model_build_ms": 1.4063749695196748,
+  "solver_runtime_ms": 4.353333031758666,
+  "runtime_ms": 5.831583985127509,
+  "solver_reported_status": "OPTIMAL",
+  "solver_reported_objective": 0.2246376811594203,
+  "model_expression_objective": 0.2246376811594203,
+  "solver_response_objective_mismatch": false,
+  "invalid_bound_discarded": false,
+  "budget_overrun_ms": 0,
+  "objective_score": 0.31
+}

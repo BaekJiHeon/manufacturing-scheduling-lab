@@ -1,0 +1,12 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "source_metrics_sha256": "856c96b33d2ef7b73bf6b1f9d12e0f0e97c8d6ebafd5554139b13e0d7708c9ea",
+  "generator_sha256": "44754c7ca8fb3bd815b516cc8c02ad0a21d3f9a8d5c68b98ba7143717245c05a",
+  "figures": [
+    "01_multi_rl_learning_raw",
+    "02_multi_rl_quality",
+    "03_multi_rl_quality_latency",
+    "04_multi_rl_external_transfer"
+  ],
+  "dpi": 600
+}

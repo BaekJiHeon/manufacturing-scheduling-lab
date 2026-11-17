@@ -1,0 +1,8 @@
+dataset: data/raw/mk01.txt
+scenario_seeds: 50
+solver_seeds: [0, 1, 2, 3, 4]
+time_limits_s: [1, 5, 30]
+workers: 1
+objective: makespan
+due_date_seed: 42
+due_date_slack: 1.7

@@ -1,0 +1,343 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 804,
+  "recorded_at": "2026-11-17T10:28:18.514503+00:00",
+  "record_type": "test",
+  "instance": "GEN9200019",
+  "scenario": "fresh_generated_test",
+  "method": "MaskedPQN",
+  "seed": 0,
+  "env_steps": 65536,
+  "makespan": 74,
+  "total_tardiness": 126,
+  "mean_tardiness": 15.75,
+  "on_time_delivery_rate": 0.375,
+  "machine_utilization": 0.6068965517241379,
+  "machine_idle_time": 114,
+  "constraint_violation_count": 0,
+  "start_shift": null,
+  "machine_changes": null,
+  "reference_operations": null,
+  "stability_cost": null,
+  "normalized_objective": 0.37552301255230125,
+  "normalization_scale": 239,
+  "schedule": [
+    {
+      "job": 1,
+      "operation": 0,
+      "machine": 2,
+      "start": 0,
+      "end": 8,
+      "duration": 8
+    },
+    {
+      "job": 2,
+      "operation": 0,
+      "machine": 0,
+      "start": 0,
+      "end": 4,
+      "duration": 4
+    },
+    {
+      "job": 6,
+      "operation": 0,
+      "machine": 1,
+      "start": 0,
+      "end": 2,
+      "duration": 2
+    },
+    {
+      "job": 6,
+      "operation": 1,
+      "machine": 3,
+      "start": 2,
+      "end": 3,
+      "duration": 1
+    },
+    {
+      "job": 2,
+      "operation": 1,
+      "machine": 3,
+      "start": 4,
+      "end": 8,
+      "duration": 4
+    },
+    {
+      "job": 4,
+      "operation": 0,
+      "machine": 0,
+      "start": 4,
+      "end": 17,
+      "duration": 7
+    },
+    {
+      "job": 2,
+      "operation": 2,
+      "machine": 2,
+      "start": 8,
+      "end": 15,
+      "duration": 7
+    },
+    {
+      "job": 1,
+      "operation": 1,
+      "machine": 3,
+      "start": 8,
+      "end": 17,
+      "duration": 9
+    },
+    {
+      "job": 5,
+      "operation": 0,
+      "machine": 2,
+      "start": 15,
+      "end": 17,
+      "duration": 2
+    },
+    {
+      "job": 1,
+      "operation": 2,
+      "machine": 3,
+      "start": 17,
+      "end": 19,
+      "duration": 2
+    },
+    {
+      "job": 4,
+      "operation": 1,
+      "machine": 0,
+      "start": 17,
+      "end": 18,
+      "duration": 1
+    },
+    {
+      "job": 4,
+      "operation": 2,
+      "machine": 2,
+      "start": 18,
+      "end": 23,
+      "duration": 5
+    },
+    {
+      "job": 6,
+      "operation": 2,
+      "machine": 1,
+      "start": 18,
+      "end": 24,
+      "duration": 6
+    },
+    {
+      "job": 7,
+      "operation": 0,
+      "machine": 3,
+      "start": 19,
+      "end": 25,
+      "duration": 6
+    },
+    {
+      "job": 1,
+      "operation": 3,
+      "machine": 2,
+      "start": 23,
+      "end": 25,
+      "duration": 2
+    },
+    {
+      "job": 4,
+      "operation": 3,
+      "machine": 1,
+      "start": 24,
+      "end": 32,
+      "duration": 8
+    },
+    {
+      "job": 2,
+      "operation": 3,
+      "machine": 3,
+      "start": 25,
+      "end": 34,
+      "duration": 9
+    },
+    {
+      "job": 7,
+      "operation": 1,
+      "machine": 2,
+      "start": 25,
+      "end": 29,
+      "duration": 4
+    },
+    {
+      "job": 7,
+      "operation": 2,
+      "machine": 2,
+      "start": 29,
+      "end": 32,
+      "duration": 3
+    },
+    {
+      "job": 4,
+      "operation": 4,
+      "machine": 0,
+      "start": 32,
+      "end": 38,
+      "duration": 6
+    },
+    {
+      "job": 7,
+      "operation": 3,
+      "machine": 2,
+      "start": 32,
+      "end": 38,
+      "duration": 6
+    },
+    {
+      "job": 6,
+      "operation": 3,
+      "machine": 3,
+      "start": 34,
+      "end": 44,
+      "duration": 10
+    },
+    {
+      "job": 0,
+      "operation": 0,
+      "machine": 2,
+      "start": 38,
+      "end": 46,
+      "duration": 8
+    },
+    {
+      "job": 3,
+      "operation": 0,
+      "machine": 3,
+      "start": 44,
+      "end": 50,
+      "duration": 6
+    },
+    {
+      "job": 0,
+      "operation": 1,
+      "machine": 2,
+      "start": 46,
+      "end": 52,
+      "duration": 6
+    },
+    {
+      "job": 3,
+      "operation": 1,
+      "machine": 1,
+      "start": 50,
+      "end": 54,
+      "duration": 4
+    },
+    {
+      "job": 5,
+      "operation": 1,
+      "machine": 3,
+      "start": 50,
+      "end": 60,
+      "duration": 10
+    },
+    {
+      "job": 3,
+      "operation": 2,
+      "machine": 2,
+      "start": 54,
+      "end": 57,
+      "duration": 3
+    },
+    {
+      "job": 0,
+      "operation": 2,
+      "machine": 1,
+      "start": 54,
+      "end": 58,
+      "duration": 4
+    },
+    {
+      "job": 3,
+      "operation": 3,
+      "machine": 2,
+      "start": 57,
+      "end": 63,
+      "duration": 6
+    },
+    {
+      "job": 0,
+      "operation": 3,
+      "machine": 0,
+      "start": 58,
+      "end": 61,
+      "duration": 3
+    },
+    {
+      "job": 5,
+      "operation": 2,
+      "machine": 3,
+      "start": 60,
+      "end": 66,
+      "duration": 6
+    },
+    {
+      "job": 5,
+      "operation": 3,
+      "machine": 2,
+      "start": 66,
+      "end": 74,
+      "duration": 8
+    }
+  ],
+  "outages": [
+    {
+      "machine": 0,
+      "start": 9,
+      "end": 15
+    }
+  ],
+  "observed_events": [
+    {
+      "time": 9,
+      "type": "breakdown",
+      "machine": 0,
+      "repair_at": 15
+    },
+    {
+      "time": 12,
+      "type": "arrival",
+      "job": [
+        {
+          "3": 6
+        },
+        {
+          "2": 4,
+          "1": 4,
+          "3": 7
+        },
+        {
+          "2": 3,
+          "1": 5
+        },
+        {
+          "1": 7,
+          "2": 6
+        }
+      ],
+      "due": 45
+    },
+    {
+      "time": 15,
+      "type": "recovery",
+      "machine": 0
+    }
+  ],
+  "runtime_ms": 4.136374918743968,
+  "decision_count": 43,
+  "wait_count": 10,
+  "mean_inference_ms": 0.0514486008648609,
+  "p95_inference_ms": 0.060600053984671824,
+  "total_inference_ms": 2.2122898371890187,
+  "objective_score": 0.8975,
+  "status": "FEASIBLE",
+  "episode_return": -0.8975,
+  "stability_applicable": false
+}

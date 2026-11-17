@@ -1,0 +1,21 @@
+{
+  "source_files": {
+    "results/expanded_static/20261117T055312Z-e99071d3/metrics.csv": "f3cff1559be2fd0fbede4b6d843ffbdfba61acc5156e553ca1296e3e9e616e47",
+    "results/objectives_dynamic/20261117T055818Z-d1b5e3ef/metrics.csv": "94fc0cf43a7bb08ddeedb15a2893935ab20391ce0ac6727cd81a85f249545baf",
+    "results/ppo_pilot/20261117T060744Z-43676ed5/metrics.csv": "9051dadd660a92c968c13d380a583b470a3ced2acdf6d61ae7148851aa544658",
+    "results/objectives_dynamic/20261117T055818Z-d1b5e3ef/record_0095.json": "eceefbacb3bf69ae81ea22fbb906c5fe8955a731827b6dbe3d2e23ed04e19f0d"
+  },
+  "figures": [
+    "01_scalability",
+    "02_objective_tradeoff",
+    "03_dynamic_stability",
+    "04_dynamic_gantt",
+    "05_ppo_validation_raw",
+    "06_ppo_quality_runtime",
+    "07_external_scale_transfer"
+  ],
+  "generator": "scripts/analyze_extended.py",
+  "generator_sha256": "1d75b4af304cae2ff5d78ba8eceb7835d73c957d02dd93ee971113967dade346",
+  "matplotlib": "3.11.2",
+  "raster_dpi": 600
+}

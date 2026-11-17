@@ -1,0 +1,1 @@
+{"instances":["MK01","MK02","MK03","MK04","MK05","MK06","MK07","MK08","MK09","MK10"],"seeds":[0,1,2],"limits_s":[1,5,30],"workers":1,"due_seed":42,"purpose":"Exploratory scalability audit; solver seeds are not independent instances; no RL tuning on these results"}

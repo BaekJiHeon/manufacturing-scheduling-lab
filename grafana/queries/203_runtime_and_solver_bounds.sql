@@ -1,0 +1,1 @@
+SELECT method,seed,status,time_limit_s,runtime_ms,solver_runtime_ms,best_bound,makespan,100*bks_gap AS bks_gap_percent FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} AND instance=${dataset:sqlstring} AND method IN (${method:sqlstring}) AND seed IN (${seed:csv}) ORDER BY method,seed;

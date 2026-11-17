@@ -1,0 +1,343 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 624,
+  "recorded_at": "2026-11-17T10:28:07.961916+00:00",
+  "record_type": "test",
+  "instance": "GEN9200019",
+  "scenario": "fresh_generated_test",
+  "method": "MaskablePPO",
+  "seed": 0,
+  "env_steps": 65536,
+  "makespan": 76,
+  "total_tardiness": 108,
+  "mean_tardiness": 13.5,
+  "on_time_delivery_rate": 0.125,
+  "machine_utilization": 0.6912751677852349,
+  "machine_idle_time": 92,
+  "constraint_violation_count": 0,
+  "start_shift": null,
+  "machine_changes": null,
+  "reference_operations": null,
+  "stability_cost": null,
+  "normalized_objective": 0.37447698744769875,
+  "normalization_scale": 239,
+  "schedule": [
+    {
+      "job": 1,
+      "operation": 0,
+      "machine": 0,
+      "start": 0,
+      "end": 5,
+      "duration": 5
+    },
+    {
+      "job": 0,
+      "operation": 0,
+      "machine": 2,
+      "start": 0,
+      "end": 8,
+      "duration": 8
+    },
+    {
+      "job": 5,
+      "operation": 0,
+      "machine": 3,
+      "start": 0,
+      "end": 8,
+      "duration": 8
+    },
+    {
+      "job": 6,
+      "operation": 0,
+      "machine": 1,
+      "start": 0,
+      "end": 2,
+      "duration": 2
+    },
+    {
+      "job": 1,
+      "operation": 1,
+      "machine": 0,
+      "start": 5,
+      "end": 6,
+      "duration": 1
+    },
+    {
+      "job": 4,
+      "operation": 0,
+      "machine": 0,
+      "start": 6,
+      "end": 19,
+      "duration": 7
+    },
+    {
+      "job": 1,
+      "operation": 2,
+      "machine": 1,
+      "start": 6,
+      "end": 15,
+      "duration": 9
+    },
+    {
+      "job": 0,
+      "operation": 1,
+      "machine": 2,
+      "start": 8,
+      "end": 14,
+      "duration": 6
+    },
+    {
+      "job": 2,
+      "operation": 0,
+      "machine": 3,
+      "start": 8,
+      "end": 12,
+      "duration": 4
+    },
+    {
+      "job": 7,
+      "operation": 0,
+      "machine": 3,
+      "start": 12,
+      "end": 18,
+      "duration": 6
+    },
+    {
+      "job": 1,
+      "operation": 3,
+      "machine": 1,
+      "start": 15,
+      "end": 23,
+      "duration": 8
+    },
+    {
+      "job": 7,
+      "operation": 1,
+      "machine": 3,
+      "start": 18,
+      "end": 25,
+      "duration": 7
+    },
+    {
+      "job": 6,
+      "operation": 1,
+      "machine": 0,
+      "start": 19,
+      "end": 26,
+      "duration": 7
+    },
+    {
+      "job": 0,
+      "operation": 2,
+      "machine": 1,
+      "start": 23,
+      "end": 27,
+      "duration": 4
+    },
+    {
+      "job": 5,
+      "operation": 1,
+      "machine": 3,
+      "start": 25,
+      "end": 35,
+      "duration": 10
+    },
+    {
+      "job": 7,
+      "operation": 2,
+      "machine": 2,
+      "start": 25,
+      "end": 28,
+      "duration": 3
+    },
+    {
+      "job": 6,
+      "operation": 2,
+      "machine": 0,
+      "start": 26,
+      "end": 33,
+      "duration": 7
+    },
+    {
+      "job": 2,
+      "operation": 1,
+      "machine": 1,
+      "start": 27,
+      "end": 35,
+      "duration": 8
+    },
+    {
+      "job": 7,
+      "operation": 3,
+      "machine": 2,
+      "start": 28,
+      "end": 34,
+      "duration": 6
+    },
+    {
+      "job": 0,
+      "operation": 3,
+      "machine": 0,
+      "start": 33,
+      "end": 36,
+      "duration": 3
+    },
+    {
+      "job": 6,
+      "operation": 3,
+      "machine": 2,
+      "start": 34,
+      "end": 42,
+      "duration": 8
+    },
+    {
+      "job": 5,
+      "operation": 2,
+      "machine": 3,
+      "start": 35,
+      "end": 41,
+      "duration": 6
+    },
+    {
+      "job": 2,
+      "operation": 2,
+      "machine": 1,
+      "start": 35,
+      "end": 45,
+      "duration": 10
+    },
+    {
+      "job": 4,
+      "operation": 1,
+      "machine": 0,
+      "start": 36,
+      "end": 37,
+      "duration": 1
+    },
+    {
+      "job": 4,
+      "operation": 2,
+      "machine": 0,
+      "start": 37,
+      "end": 47,
+      "duration": 10
+    },
+    {
+      "job": 3,
+      "operation": 0,
+      "machine": 3,
+      "start": 41,
+      "end": 47,
+      "duration": 6
+    },
+    {
+      "job": 5,
+      "operation": 3,
+      "machine": 2,
+      "start": 42,
+      "end": 50,
+      "duration": 8
+    },
+    {
+      "job": 2,
+      "operation": 3,
+      "machine": 3,
+      "start": 47,
+      "end": 56,
+      "duration": 9
+    },
+    {
+      "job": 3,
+      "operation": 1,
+      "machine": 1,
+      "start": 47,
+      "end": 51,
+      "duration": 4
+    },
+    {
+      "job": 3,
+      "operation": 2,
+      "machine": 1,
+      "start": 51,
+      "end": 56,
+      "duration": 5
+    },
+    {
+      "job": 3,
+      "operation": 3,
+      "machine": 1,
+      "start": 56,
+      "end": 63,
+      "duration": 7
+    },
+    {
+      "job": 4,
+      "operation": 3,
+      "machine": 1,
+      "start": 63,
+      "end": 71,
+      "duration": 8
+    },
+    {
+      "job": 4,
+      "operation": 4,
+      "machine": 3,
+      "start": 71,
+      "end": 76,
+      "duration": 5
+    }
+  ],
+  "outages": [
+    {
+      "machine": 0,
+      "start": 9,
+      "end": 15
+    }
+  ],
+  "observed_events": [
+    {
+      "time": 9,
+      "type": "breakdown",
+      "machine": 0,
+      "repair_at": 15
+    },
+    {
+      "time": 12,
+      "type": "arrival",
+      "job": [
+        {
+          "3": 6
+        },
+        {
+          "2": 4,
+          "1": 4,
+          "3": 7
+        },
+        {
+          "2": 3,
+          "1": 5
+        },
+        {
+          "1": 7,
+          "2": 6
+        }
+      ],
+      "due": 45
+    },
+    {
+      "time": 15,
+      "type": "recovery",
+      "machine": 0
+    }
+  ],
+  "runtime_ms": 6.355707999318838,
+  "decision_count": 33,
+  "wait_count": 0,
+  "mean_inference_ms": 0.14363253968908932,
+  "p95_inference_ms": 0.15235864557325837,
+  "total_inference_ms": 4.739873809739947,
+  "objective_score": 0.895,
+  "status": "FEASIBLE",
+  "episode_return": -0.895,
+  "stability_applicable": false
+}

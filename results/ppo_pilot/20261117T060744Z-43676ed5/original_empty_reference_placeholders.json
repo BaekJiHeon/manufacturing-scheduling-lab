@@ -1,0 +1,1874 @@
+[
+  {
+    "step": 190,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 191,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 192,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 195,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 196,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 197,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 200,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 201,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 202,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 205,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 206,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 207,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 210,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 211,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 212,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 215,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 216,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 217,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 220,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 221,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 222,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 225,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 226,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 227,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 230,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 231,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 232,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 235,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 236,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 237,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 240,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 241,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 242,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 245,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 246,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 247,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 250,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 251,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 252,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 255,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 256,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 257,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 260,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 261,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 262,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 265,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 266,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 267,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 270,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 271,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 272,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 275,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 276,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 277,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 280,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 281,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 282,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 285,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 286,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 287,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 290,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 291,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 292,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 295,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 296,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 297,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 300,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 301,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 302,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 305,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 306,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 307,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 310,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 311,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 312,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 315,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 316,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 317,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 320,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 321,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 322,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 323,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 324,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 325,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 326,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 327,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 328,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 329,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 330,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 331,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 332,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 333,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 334,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 335,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 336,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 337,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 338,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 339,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 340,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 341,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 342,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 343,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 344,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 345,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 346,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 347,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 348,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 349,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 350,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 351,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 352,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 353,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 354,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 355,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 356,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 357,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 358,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 359,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 360,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 361,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 362,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 363,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 364,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 365,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 366,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 367,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 368,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 369,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 370,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 371,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 372,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 373,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 374,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 375,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 376,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 377,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 378,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 379,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 380,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 381,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 382,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 383,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 384,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 385,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 386,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 387,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 388,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 389,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 390,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 391,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 392,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 393,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 394,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 395,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 396,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 397,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 398,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 399,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 400,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 401,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 402,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 403,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 404,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 405,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 406,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 407,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 408,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 409,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 410,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 411,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 412,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 413,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 414,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 415,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 416,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 417,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 418,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 419,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 420,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 421,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 422,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 423,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 424,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 425,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 426,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 427,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 428,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 429,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 430,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 431,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 432,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 433,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 434,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 435,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 436,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 437,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 438,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 439,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 440,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 441,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 442,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 443,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 444,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 445,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 446,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 447,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 448,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  },
+  {
+    "step": 449,
+    "original": {
+      "stability_cost": 0.0,
+      "start_shift": 0,
+      "machine_changes": 0,
+      "reference_operations": 0
+    }
+  }
+]

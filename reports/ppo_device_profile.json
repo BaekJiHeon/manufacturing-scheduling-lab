@@ -1,0 +1,12 @@
+{
+  "cpu": {
+    "mean_predict_ms": 0.12611082987859845,
+    "repeats": 100,
+    "includes_tensor_transfer": true
+  },
+  "mps": {
+    "mean_predict_ms": 3.392255420330912,
+    "repeats": 100,
+    "includes_tensor_transfer": true
+  }
+}

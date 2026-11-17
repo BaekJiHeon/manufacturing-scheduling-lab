@@ -1,0 +1,1238 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 627,
+  "recorded_at": "2026-11-17T10:28:08.124275+00:00",
+  "record_type": "test",
+  "instance": "MK03",
+  "scenario": "external_static",
+  "method": "MaskablePPO",
+  "seed": 0,
+  "env_steps": 65536,
+  "makespan": 238,
+  "total_tardiness": 1191,
+  "mean_tardiness": 79.4,
+  "on_time_delivery_rate": 0.06666666666666667,
+  "machine_utilization": 0.7757352941176471,
+  "machine_idle_time": 427,
+  "constraint_violation_count": 0,
+  "start_shift": null,
+  "machine_changes": null,
+  "reference_operations": null,
+  "stability_cost": null,
+  "normalized_objective": 0.14394557823129253,
+  "normalization_scale": 2205,
+  "schedule": [
+    {
+      "job": 1,
+      "operation": 0,
+      "machine": 5,
+      "start": 0,
+      "end": 11,
+      "duration": 11
+    },
+    {
+      "job": 5,
+      "operation": 0,
+      "machine": 1,
+      "start": 0,
+      "end": 1,
+      "duration": 1
+    },
+    {
+      "job": 2,
+      "operation": 0,
+      "machine": 2,
+      "start": 0,
+      "end": 3,
+      "duration": 3
+    },
+    {
+      "job": 0,
+      "operation": 0,
+      "machine": 3,
+      "start": 0,
+      "end": 5,
+      "duration": 5
+    },
+    {
+      "job": 7,
+      "operation": 0,
+      "machine": 7,
+      "start": 0,
+      "end": 19,
+      "duration": 19
+    },
+    {
+      "job": 4,
+      "operation": 0,
+      "machine": 6,
+      "start": 0,
+      "end": 13,
+      "duration": 13
+    },
+    {
+      "job": 11,
+      "operation": 0,
+      "machine": 0,
+      "start": 0,
+      "end": 7,
+      "duration": 7
+    },
+    {
+      "job": 6,
+      "operation": 0,
+      "machine": 4,
+      "start": 0,
+      "end": 10,
+      "duration": 10
+    },
+    {
+      "job": 12,
+      "operation": 0,
+      "machine": 1,
+      "start": 1,
+      "end": 11,
+      "duration": 10
+    },
+    {
+      "job": 14,
+      "operation": 0,
+      "machine": 2,
+      "start": 3,
+      "end": 17,
+      "duration": 14
+    },
+    {
+      "job": 3,
+      "operation": 0,
+      "machine": 3,
+      "start": 5,
+      "end": 10,
+      "duration": 5
+    },
+    {
+      "job": 8,
+      "operation": 0,
+      "machine": 0,
+      "start": 7,
+      "end": 24,
+      "duration": 17
+    },
+    {
+      "job": 11,
+      "operation": 1,
+      "machine": 3,
+      "start": 10,
+      "end": 15,
+      "duration": 5
+    },
+    {
+      "job": 3,
+      "operation": 1,
+      "machine": 4,
+      "start": 10,
+      "end": 15,
+      "duration": 5
+    },
+    {
+      "job": 5,
+      "operation": 1,
+      "machine": 5,
+      "start": 11,
+      "end": 26,
+      "duration": 15
+    },
+    {
+      "job": 10,
+      "operation": 0,
+      "machine": 1,
+      "start": 11,
+      "end": 12,
+      "duration": 1
+    },
+    {
+      "job": 2,
+      "operation": 1,
+      "machine": 1,
+      "start": 12,
+      "end": 13,
+      "duration": 1
+    },
+    {
+      "job": 4,
+      "operation": 1,
+      "machine": 6,
+      "start": 13,
+      "end": 28,
+      "duration": 15
+    },
+    {
+      "job": 6,
+      "operation": 1,
+      "machine": 3,
+      "start": 15,
+      "end": 26,
+      "duration": 11
+    },
+    {
+      "job": 12,
+      "operation": 1,
+      "machine": 4,
+      "start": 15,
+      "end": 17,
+      "duration": 2
+    },
+    {
+      "job": 3,
+      "operation": 2,
+      "machine": 1,
+      "start": 15,
+      "end": 33,
+      "duration": 18
+    },
+    {
+      "job": 0,
+      "operation": 1,
+      "machine": 2,
+      "start": 17,
+      "end": 35,
+      "duration": 18
+    },
+    {
+      "job": 14,
+      "operation": 1,
+      "machine": 4,
+      "start": 17,
+      "end": 23,
+      "duration": 6
+    },
+    {
+      "job": 11,
+      "operation": 2,
+      "machine": 7,
+      "start": 19,
+      "end": 37,
+      "duration": 18
+    },
+    {
+      "job": 1,
+      "operation": 1,
+      "machine": 0,
+      "start": 24,
+      "end": 41,
+      "duration": 17
+    },
+    {
+      "job": 8,
+      "operation": 1,
+      "machine": 4,
+      "start": 24,
+      "end": 34,
+      "duration": 10
+    },
+    {
+      "job": 5,
+      "operation": 2,
+      "machine": 3,
+      "start": 26,
+      "end": 31,
+      "duration": 5
+    },
+    {
+      "job": 13,
+      "operation": 0,
+      "machine": 5,
+      "start": 26,
+      "end": 37,
+      "duration": 11
+    },
+    {
+      "job": 10,
+      "operation": 1,
+      "machine": 6,
+      "start": 28,
+      "end": 43,
+      "duration": 15
+    },
+    {
+      "job": 12,
+      "operation": 2,
+      "machine": 3,
+      "start": 31,
+      "end": 36,
+      "duration": 5
+    },
+    {
+      "job": 6,
+      "operation": 2,
+      "machine": 1,
+      "start": 33,
+      "end": 34,
+      "duration": 1
+    },
+    {
+      "job": 4,
+      "operation": 2,
+      "machine": 4,
+      "start": 34,
+      "end": 36,
+      "duration": 2
+    },
+    {
+      "job": 5,
+      "operation": 3,
+      "machine": 2,
+      "start": 35,
+      "end": 51,
+      "duration": 16
+    },
+    {
+      "job": 3,
+      "operation": 3,
+      "machine": 3,
+      "start": 36,
+      "end": 47,
+      "duration": 11
+    },
+    {
+      "job": 12,
+      "operation": 3,
+      "machine": 1,
+      "start": 36,
+      "end": 37,
+      "duration": 1
+    },
+    {
+      "job": 4,
+      "operation": 3,
+      "machine": 4,
+      "start": 36,
+      "end": 55,
+      "duration": 19
+    },
+    {
+      "job": 0,
+      "operation": 2,
+      "machine": 7,
+      "start": 37,
+      "end": 55,
+      "duration": 18
+    },
+    {
+      "job": 14,
+      "operation": 2,
+      "machine": 5,
+      "start": 37,
+      "end": 52,
+      "duration": 15
+    },
+    {
+      "job": 7,
+      "operation": 1,
+      "machine": 0,
+      "start": 41,
+      "end": 58,
+      "duration": 17
+    },
+    {
+      "job": 1,
+      "operation": 2,
+      "machine": 1,
+      "start": 41,
+      "end": 42,
+      "duration": 1
+    },
+    {
+      "job": 1,
+      "operation": 3,
+      "machine": 1,
+      "start": 42,
+      "end": 52,
+      "duration": 10
+    },
+    {
+      "job": 8,
+      "operation": 2,
+      "machine": 6,
+      "start": 43,
+      "end": 46,
+      "duration": 3
+    },
+    {
+      "job": 8,
+      "operation": 3,
+      "machine": 6,
+      "start": 46,
+      "end": 61,
+      "duration": 15
+    },
+    {
+      "job": 13,
+      "operation": 1,
+      "machine": 3,
+      "start": 47,
+      "end": 52,
+      "duration": 5
+    },
+    {
+      "job": 5,
+      "operation": 4,
+      "machine": 2,
+      "start": 51,
+      "end": 64,
+      "duration": 13
+    },
+    {
+      "job": 1,
+      "operation": 4,
+      "machine": 1,
+      "start": 52,
+      "end": 70,
+      "duration": 18
+    },
+    {
+      "job": 10,
+      "operation": 2,
+      "machine": 5,
+      "start": 52,
+      "end": 63,
+      "duration": 11
+    },
+    {
+      "job": 13,
+      "operation": 2,
+      "machine": 3,
+      "start": 52,
+      "end": 65,
+      "duration": 13
+    },
+    {
+      "job": 0,
+      "operation": 3,
+      "machine": 4,
+      "start": 55,
+      "end": 62,
+      "duration": 7
+    },
+    {
+      "job": 14,
+      "operation": 3,
+      "machine": 7,
+      "start": 55,
+      "end": 66,
+      "duration": 11
+    },
+    {
+      "job": 6,
+      "operation": 3,
+      "machine": 0,
+      "start": 58,
+      "end": 75,
+      "duration": 17
+    },
+    {
+      "job": 7,
+      "operation": 2,
+      "machine": 6,
+      "start": 61,
+      "end": 76,
+      "duration": 15
+    },
+    {
+      "job": 0,
+      "operation": 4,
+      "machine": 4,
+      "start": 62,
+      "end": 68,
+      "duration": 6
+    },
+    {
+      "job": 4,
+      "operation": 4,
+      "machine": 5,
+      "start": 63,
+      "end": 81,
+      "duration": 18
+    },
+    {
+      "job": 10,
+      "operation": 3,
+      "machine": 2,
+      "start": 64,
+      "end": 82,
+      "duration": 18
+    },
+    {
+      "job": 2,
+      "operation": 2,
+      "machine": 3,
+      "start": 65,
+      "end": 70,
+      "duration": 5
+    },
+    {
+      "job": 5,
+      "operation": 5,
+      "machine": 7,
+      "start": 66,
+      "end": 71,
+      "duration": 5
+    },
+    {
+      "job": 0,
+      "operation": 5,
+      "machine": 4,
+      "start": 68,
+      "end": 70,
+      "duration": 2
+    },
+    {
+      "job": 13,
+      "operation": 3,
+      "machine": 4,
+      "start": 70,
+      "end": 77,
+      "duration": 7
+    },
+    {
+      "job": 5,
+      "operation": 6,
+      "machine": 7,
+      "start": 71,
+      "end": 74,
+      "duration": 3
+    },
+    {
+      "job": 5,
+      "operation": 7,
+      "machine": 7,
+      "start": 74,
+      "end": 85,
+      "duration": 11
+    },
+    {
+      "job": 11,
+      "operation": 3,
+      "machine": 0,
+      "start": 75,
+      "end": 92,
+      "duration": 17
+    },
+    {
+      "job": 1,
+      "operation": 5,
+      "machine": 6,
+      "start": 76,
+      "end": 89,
+      "duration": 13
+    },
+    {
+      "job": 13,
+      "operation": 4,
+      "machine": 4,
+      "start": 77,
+      "end": 83,
+      "duration": 6
+    },
+    {
+      "job": 14,
+      "operation": 4,
+      "machine": 5,
+      "start": 81,
+      "end": 92,
+      "duration": 11
+    },
+    {
+      "job": 4,
+      "operation": 5,
+      "machine": 2,
+      "start": 82,
+      "end": 101,
+      "duration": 19
+    },
+    {
+      "job": 13,
+      "operation": 5,
+      "machine": 3,
+      "start": 83,
+      "end": 88,
+      "duration": 5
+    },
+    {
+      "job": 10,
+      "operation": 4,
+      "machine": 4,
+      "start": 83,
+      "end": 89,
+      "duration": 6
+    },
+    {
+      "job": 13,
+      "operation": 6,
+      "machine": 6,
+      "start": 89,
+      "end": 102,
+      "duration": 13
+    },
+    {
+      "job": 5,
+      "operation": 8,
+      "machine": 4,
+      "start": 89,
+      "end": 95,
+      "duration": 6
+    },
+    {
+      "job": 1,
+      "operation": 6,
+      "machine": 7,
+      "start": 89,
+      "end": 100,
+      "duration": 11
+    },
+    {
+      "job": 11,
+      "operation": 4,
+      "machine": 5,
+      "start": 92,
+      "end": 110,
+      "duration": 18
+    },
+    {
+      "job": 10,
+      "operation": 5,
+      "machine": 0,
+      "start": 92,
+      "end": 109,
+      "duration": 17
+    },
+    {
+      "job": 5,
+      "operation": 9,
+      "machine": 4,
+      "start": 95,
+      "end": 100,
+      "duration": 5
+    },
+    {
+      "job": 1,
+      "operation": 7,
+      "machine": 4,
+      "start": 100,
+      "end": 107,
+      "duration": 7
+    },
+    {
+      "job": 4,
+      "operation": 6,
+      "machine": 3,
+      "start": 101,
+      "end": 106,
+      "duration": 5
+    },
+    {
+      "job": 6,
+      "operation": 4,
+      "machine": 6,
+      "start": 102,
+      "end": 115,
+      "duration": 13
+    },
+    {
+      "job": 1,
+      "operation": 8,
+      "machine": 7,
+      "start": 107,
+      "end": 110,
+      "duration": 3
+    },
+    {
+      "job": 13,
+      "operation": 7,
+      "machine": 4,
+      "start": 107,
+      "end": 109,
+      "duration": 2
+    },
+    {
+      "job": 13,
+      "operation": 8,
+      "machine": 3,
+      "start": 109,
+      "end": 120,
+      "duration": 11
+    },
+    {
+      "job": 9,
+      "operation": 0,
+      "machine": 0,
+      "start": 109,
+      "end": 126,
+      "duration": 17
+    },
+    {
+      "job": 10,
+      "operation": 6,
+      "machine": 2,
+      "start": 109,
+      "end": 112,
+      "duration": 3
+    },
+    {
+      "job": 4,
+      "operation": 7,
+      "machine": 4,
+      "start": 109,
+      "end": 115,
+      "duration": 6
+    },
+    {
+      "job": 11,
+      "operation": 5,
+      "machine": 5,
+      "start": 110,
+      "end": 112,
+      "duration": 2
+    },
+    {
+      "job": 1,
+      "operation": 9,
+      "machine": 7,
+      "start": 110,
+      "end": 129,
+      "duration": 19
+    },
+    {
+      "job": 8,
+      "operation": 4,
+      "machine": 5,
+      "start": 112,
+      "end": 127,
+      "duration": 15
+    },
+    {
+      "job": 4,
+      "operation": 8,
+      "machine": 2,
+      "start": 115,
+      "end": 118,
+      "duration": 3
+    },
+    {
+      "job": 6,
+      "operation": 5,
+      "machine": 6,
+      "start": 115,
+      "end": 117,
+      "duration": 2
+    },
+    {
+      "job": 11,
+      "operation": 6,
+      "machine": 4,
+      "start": 115,
+      "end": 117,
+      "duration": 2
+    },
+    {
+      "job": 10,
+      "operation": 7,
+      "machine": 4,
+      "start": 117,
+      "end": 119,
+      "duration": 2
+    },
+    {
+      "job": 7,
+      "operation": 3,
+      "machine": 6,
+      "start": 117,
+      "end": 130,
+      "duration": 13
+    },
+    {
+      "job": 4,
+      "operation": 9,
+      "machine": 2,
+      "start": 118,
+      "end": 132,
+      "duration": 14
+    },
+    {
+      "job": 6,
+      "operation": 6,
+      "machine": 4,
+      "start": 119,
+      "end": 121,
+      "duration": 2
+    },
+    {
+      "job": 10,
+      "operation": 8,
+      "machine": 1,
+      "start": 119,
+      "end": 129,
+      "duration": 10
+    },
+    {
+      "job": 6,
+      "operation": 7,
+      "machine": 3,
+      "start": 121,
+      "end": 132,
+      "duration": 11
+    },
+    {
+      "job": 11,
+      "operation": 7,
+      "machine": 4,
+      "start": 121,
+      "end": 126,
+      "duration": 5
+    },
+    {
+      "job": 11,
+      "operation": 8,
+      "machine": 4,
+      "start": 126,
+      "end": 145,
+      "duration": 19
+    },
+    {
+      "job": 14,
+      "operation": 5,
+      "machine": 0,
+      "start": 126,
+      "end": 143,
+      "duration": 17
+    },
+    {
+      "job": 9,
+      "operation": 1,
+      "machine": 5,
+      "start": 127,
+      "end": 142,
+      "duration": 15
+    },
+    {
+      "job": 8,
+      "operation": 5,
+      "machine": 7,
+      "start": 129,
+      "end": 132,
+      "duration": 3
+    },
+    {
+      "job": 10,
+      "operation": 9,
+      "machine": 1,
+      "start": 129,
+      "end": 147,
+      "duration": 18
+    },
+    {
+      "job": 12,
+      "operation": 4,
+      "machine": 6,
+      "start": 130,
+      "end": 143,
+      "duration": 13
+    },
+    {
+      "job": 6,
+      "operation": 8,
+      "machine": 3,
+      "start": 132,
+      "end": 137,
+      "duration": 5
+    },
+    {
+      "job": 7,
+      "operation": 4,
+      "machine": 7,
+      "start": 132,
+      "end": 137,
+      "duration": 5
+    },
+    {
+      "job": 7,
+      "operation": 5,
+      "machine": 7,
+      "start": 137,
+      "end": 140,
+      "duration": 3
+    },
+    {
+      "job": 6,
+      "operation": 9,
+      "machine": 7,
+      "start": 140,
+      "end": 159,
+      "duration": 19
+    },
+    {
+      "job": 7,
+      "operation": 6,
+      "machine": 2,
+      "start": 140,
+      "end": 153,
+      "duration": 13
+    },
+    {
+      "job": 9,
+      "operation": 2,
+      "machine": 3,
+      "start": 142,
+      "end": 147,
+      "duration": 5
+    },
+    {
+      "job": 2,
+      "operation": 3,
+      "machine": 5,
+      "start": 142,
+      "end": 145,
+      "duration": 3
+    },
+    {
+      "job": 12,
+      "operation": 5,
+      "machine": 6,
+      "start": 143,
+      "end": 146,
+      "duration": 3
+    },
+    {
+      "job": 14,
+      "operation": 6,
+      "machine": 0,
+      "start": 143,
+      "end": 152,
+      "duration": 9
+    },
+    {
+      "job": 2,
+      "operation": 4,
+      "machine": 5,
+      "start": 145,
+      "end": 158,
+      "duration": 13
+    },
+    {
+      "job": 8,
+      "operation": 6,
+      "machine": 4,
+      "start": 145,
+      "end": 147,
+      "duration": 2
+    },
+    {
+      "job": 12,
+      "operation": 6,
+      "machine": 6,
+      "start": 146,
+      "end": 161,
+      "duration": 15
+    },
+    {
+      "job": 8,
+      "operation": 7,
+      "machine": 1,
+      "start": 147,
+      "end": 148,
+      "duration": 1
+    },
+    {
+      "job": 9,
+      "operation": 3,
+      "machine": 3,
+      "start": 147,
+      "end": 158,
+      "duration": 11
+    },
+    {
+      "job": 0,
+      "operation": 6,
+      "machine": 4,
+      "start": 147,
+      "end": 149,
+      "duration": 2
+    },
+    {
+      "job": 8,
+      "operation": 8,
+      "machine": 1,
+      "start": 148,
+      "end": 166,
+      "duration": 18
+    },
+    {
+      "job": 14,
+      "operation": 7,
+      "machine": 4,
+      "start": 152,
+      "end": 154,
+      "duration": 2
+    },
+    {
+      "job": 13,
+      "operation": 9,
+      "machine": 0,
+      "start": 152,
+      "end": 169,
+      "duration": 17
+    },
+    {
+      "job": 14,
+      "operation": 8,
+      "machine": 2,
+      "start": 154,
+      "end": 172,
+      "duration": 18
+    },
+    {
+      "job": 2,
+      "operation": 5,
+      "machine": 5,
+      "start": 158,
+      "end": 160,
+      "duration": 2
+    },
+    {
+      "job": 11,
+      "operation": 9,
+      "machine": 3,
+      "start": 158,
+      "end": 171,
+      "duration": 13
+    },
+    {
+      "job": 9,
+      "operation": 4,
+      "machine": 7,
+      "start": 159,
+      "end": 162,
+      "duration": 3
+    },
+    {
+      "job": 2,
+      "operation": 6,
+      "machine": 5,
+      "start": 160,
+      "end": 178,
+      "duration": 18
+    },
+    {
+      "job": 3,
+      "operation": 4,
+      "machine": 6,
+      "start": 161,
+      "end": 174,
+      "duration": 13
+    },
+    {
+      "job": 8,
+      "operation": 9,
+      "machine": 4,
+      "start": 166,
+      "end": 185,
+      "duration": 19
+    },
+    {
+      "job": 12,
+      "operation": 7,
+      "machine": 1,
+      "start": 166,
+      "end": 184,
+      "duration": 18
+    },
+    {
+      "job": 0,
+      "operation": 7,
+      "machine": 0,
+      "start": 169,
+      "end": 186,
+      "duration": 17
+    },
+    {
+      "job": 9,
+      "operation": 5,
+      "machine": 3,
+      "start": 171,
+      "end": 176,
+      "duration": 5
+    },
+    {
+      "job": 14,
+      "operation": 9,
+      "machine": 2,
+      "start": 172,
+      "end": 191,
+      "duration": 19
+    },
+    {
+      "job": 3,
+      "operation": 5,
+      "machine": 6,
+      "start": 174,
+      "end": 176,
+      "duration": 2
+    },
+    {
+      "job": 7,
+      "operation": 7,
+      "machine": 3,
+      "start": 176,
+      "end": 189,
+      "duration": 13
+    },
+    {
+      "job": 9,
+      "operation": 6,
+      "machine": 5,
+      "start": 178,
+      "end": 181,
+      "duration": 3
+    },
+    {
+      "job": 2,
+      "operation": 7,
+      "machine": 7,
+      "start": 178,
+      "end": 196,
+      "duration": 18
+    },
+    {
+      "job": 9,
+      "operation": 7,
+      "machine": 6,
+      "start": 181,
+      "end": 196,
+      "duration": 15
+    },
+    {
+      "job": 12,
+      "operation": 8,
+      "machine": 5,
+      "start": 184,
+      "end": 187,
+      "duration": 3
+    },
+    {
+      "job": 3,
+      "operation": 6,
+      "machine": 4,
+      "start": 185,
+      "end": 187,
+      "duration": 2
+    },
+    {
+      "job": 0,
+      "operation": 8,
+      "machine": 0,
+      "start": 186,
+      "end": 198,
+      "duration": 12
+    },
+    {
+      "job": 12,
+      "operation": 9,
+      "machine": 5,
+      "start": 187,
+      "end": 200,
+      "duration": 13
+    },
+    {
+      "job": 7,
+      "operation": 8,
+      "machine": 3,
+      "start": 189,
+      "end": 194,
+      "duration": 5
+    },
+    {
+      "job": 3,
+      "operation": 7,
+      "machine": 2,
+      "start": 191,
+      "end": 207,
+      "duration": 16
+    },
+    {
+      "job": 7,
+      "operation": 9,
+      "machine": 4,
+      "start": 194,
+      "end": 199,
+      "duration": 5
+    },
+    {
+      "job": 9,
+      "operation": 8,
+      "machine": 6,
+      "start": 196,
+      "end": 199,
+      "duration": 3
+    },
+    {
+      "job": 0,
+      "operation": 9,
+      "machine": 7,
+      "start": 198,
+      "end": 217,
+      "duration": 19
+    },
+    {
+      "job": 2,
+      "operation": 8,
+      "machine": 0,
+      "start": 198,
+      "end": 215,
+      "duration": 17
+    },
+    {
+      "job": 9,
+      "operation": 9,
+      "machine": 4,
+      "start": 199,
+      "end": 209,
+      "duration": 10
+    },
+    {
+      "job": 2,
+      "operation": 9,
+      "machine": 1,
+      "start": 215,
+      "end": 216,
+      "duration": 1
+    },
+    {
+      "job": 3,
+      "operation": 8,
+      "machine": 0,
+      "start": 215,
+      "end": 232,
+      "duration": 17
+    },
+    {
+      "job": 3,
+      "operation": 9,
+      "machine": 4,
+      "start": 232,
+      "end": 238,
+      "duration": 6
+    }
+  ],
+  "outages": [],
+  "observed_events": [],
+  "runtime_ms": 48.55679196771234,
+  "decision_count": 151,
+  "wait_count": 1,
+  "mean_inference_ms": 0.140926637995174,
+  "p95_inference_ms": 0.15381252160295844,
+  "total_inference_ms": 21.279922337271273,
+  "objective_score": 3.174,
+  "status": "FEASIBLE",
+  "episode_return": -3.1740000000000013,
+  "stability_applicable": false
+}

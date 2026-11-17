@@ -1,0 +1,15 @@
+apiVersion: 1
+datasources:
+  - name: Manufacturing PostgreSQL
+    uid: manufacturing_pg
+    type: postgres
+    access: proxy
+    url: postgres:5432
+    user: demo
+    jsonData:
+      database: manufacturing_rl
+      sslmode: disable
+      postgresVersion: 1600
+    secureJsonData:
+      password: demo_local_only
+    isDefault: true

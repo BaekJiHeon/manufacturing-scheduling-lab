@@ -1,0 +1,15 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "step": 137,
+  "recorded_at": "2026-11-17T10:21:19.394304+00:00",
+  "record_type": "validation",
+  "instance": "generated_validation",
+  "scenario": "mixed",
+  "method": "MaskedPQN",
+  "seed": 1,
+  "env_steps": 16384,
+  "objective_score": 1.8900852272727273,
+  "makespan": 129.25,
+  "total_tardiness": 547.5,
+  "episode_return": -1.8900852272727278
+}

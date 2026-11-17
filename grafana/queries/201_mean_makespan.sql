@@ -1,0 +1,1 @@
+SELECT method, AVG(makespan) AS makespan FROM evaluation_metrics WHERE run_id=${run_id:sqlstring} AND instance=${dataset:sqlstring} AND method IN (${method:sqlstring}) AND seed IN (${seed:csv}) GROUP BY method ORDER BY method;

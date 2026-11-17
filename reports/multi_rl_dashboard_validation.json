@@ -1,0 +1,53 @@
+{
+  "run_id": "20261117T101814Z-eab66180",
+  "checks": [
+    {
+      "panel": "Validation objective \u00b7 lower is better",
+      "ok": true,
+      "frames": 1,
+      "last_numeric_value": 0.8298011363636364
+    },
+    {
+      "panel": "Validation by actual interaction count",
+      "ok": true,
+      "frames": 1,
+      "last_numeric_value": 0.8298011363636364
+    },
+    {
+      "panel": "Mean cost gap to CP-SAT 5s \u00b7 positive is worse",
+      "ok": true,
+      "frames": 1,
+      "last_numeric_value": 100
+    },
+    {
+      "panel": "Full episode latency and action latency \u00b7 different units of work",
+      "ok": true,
+      "frames": 1,
+      "last_numeric_value": 20
+    },
+    {
+      "panel": "Training runtime, parameters and checkpoint audit",
+      "ok": true,
+      "frames": 1,
+      "last_numeric_value": 14.6
+    },
+    {
+      "panel": "Observed training returns",
+      "ok": true,
+      "frames": 1,
+      "last_numeric_value": -0.828901927437642
+    },
+    {
+      "panel": "Optimizer losses \u00b7 algorithm-specific scales",
+      "ok": true,
+      "frames": 1,
+      "last_numeric_value": 0.0018756576973828487
+    },
+    {
+      "panel": "Raw evaluation results",
+      "ok": true,
+      "frames": 1,
+      "last_numeric_value": 1324
+    }
+  ]
+}

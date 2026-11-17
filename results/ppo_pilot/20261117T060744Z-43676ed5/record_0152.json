@@ -1,0 +1,15 @@
+{
+  "run_id": "20261117T060744Z-43676ed5",
+  "step": 152,
+  "recorded_at": "2026-11-17T06:08:58.169803+00:00",
+  "record_type": "validation",
+  "instance": "generated_validation",
+  "scenario": "mixed",
+  "method": "MaskablePPO",
+  "seed": 4,
+  "env_steps": 0,
+  "makespan": 170.0,
+  "total_tardiness": 627.25,
+  "objective_score": 2.516335227272727,
+  "episode_return": -2.5163352272727275
+}
