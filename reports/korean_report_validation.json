@@ -1,0 +1,13 @@
+{
+  "pages": 12,
+  "tables": 11,
+  "figures": 2,
+  "visual_review": "All 12 pages reviewed; unchanged pages in final render are byte-identical to reviewed prior render",
+  "korean_text_present_on_all_pages": true,
+  "rl_tables_from_persisted_csv": true,
+  "reference_links": 8,
+  "outputs": {
+    "manufacturing_scheduling_report_ko.docx": "210fb280d7e4fc03829017d3a71d7f33884d16f4191908e222d731ad42f3d2ba",
+    "manufacturing_scheduling_report_ko.pdf": "52357d656b3c4544741d6db0db41a860b82655e0d9af99f8d1a343741f01a7ac"
+  }
+}
