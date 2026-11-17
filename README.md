@@ -1,6 +1,6 @@
 <div align="center">
 
-# Manufacturing Scheduling Lab
+# Manufacturing Scheduling
 
 ### 동적 제조 스케줄링 최적화와 강화학습의 적용 가능성 검증
 
