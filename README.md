@@ -8,7 +8,7 @@
 
 공정 순서, 설비 제약, 납기, 고장과 신규 주문을 함께 고려하는 스케줄링 연구 프로젝트
 
-[RL 검토 배경](#왜-강화학습까지-검토했는가) · [주요 결과](#주요-결과) · [시스템 구조](#시스템-구조) · [실험 설계](#실험-설계) · [재현 방법](#재현-방법) · [기술 회고](docs/CASE_STUDY.md)
+[RL 검토 배경](#왜-강화학습까지-검토했는가) · [주요 결과](#주요-결과) · [전체 Figure 23종](figures/README.md) · [시스템 구조](#시스템-구조) · [실험 설계](#실험-설계) · [재현 방법](#재현-방법) · [기술 회고](docs/CASE_STUDY.md)
 
 </div>
 
@@ -23,6 +23,8 @@
 | 납기·완료 시간·일정 변경의 상충 | CP-SAT + 휴리스틱 + RL 정책 | 추가 RL 비교: 4방법 × 5시드 | 완료 스케줄 900개, 중간 계획 128개 검사 |
 
 **프로젝트가 처음이라면:** [한국어 기술 보고서 PDF](docs/manufacturing_scheduling_report_ko.pdf) · [편집용 Word](docs/manufacturing_scheduling_report_ko.docx) — 문제 예시부터 데이터, 방법, 결과와 한계까지 설명한 12쪽 보고서입니다.
+
+**그림으로 살펴보기:** [전체 Figure 23종과 한국어 해설](figures/README.md) — 확장 최적화·동적 재계획, 추가 RL 4종, 초기 PPO와 기준선까지 모두 수록했습니다. 각 그림의 PNG 미리보기와 SVG·PDF 원본을 제공합니다. 보고서 본문은 핵심 그림을, 전체 그림 모음은 초기 실험까지 포함한 부록을 제공합니다.
 
 ## 해결하려는 문제
 
@@ -239,6 +241,8 @@ bash scripts/python.sh scripts/analyze_multi_rl.py
 후속 과제는 공정·설비 관계를 반영하는 상태 표현, 학습 문제 크기와 평가 분포의 차이, 학습 예산 효과를 **각각 분리해 검증**하는 것입니다. GNN 정책·모방학습·CP-SAT과의 결합은 아직 구현 성과가 아닌 연구 후보입니다.
 
 ## 더 읽기
+
+- [전체 Figure 23종: 한국어 해설·PNG·SVG·PDF](figures/README.md)
 
 - [기술 회고 및 포트폴리오 상세](docs/CASE_STUDY.md) — 설계 결정, 문제 해결, 결과 해석
 - [확장 벤치마크 결과](reports/expanded_results.md) · [실험 정의](reports/expanded_experiment_protocol.md)
